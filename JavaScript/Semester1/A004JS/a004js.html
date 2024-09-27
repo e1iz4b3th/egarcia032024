@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Properties - URL, title, lastModified</title>
+    <style>
+        #listyle
+        {
+            list-style: none;
+        }
+        p#highlight
+        {
+            padding: 1.5rem;
+            background-color: yellow;
+        }
+        pre
+        {
+            background-color: #333;
+            color: white;
+        }
+        span.comment
+        {
+            color: green;
+        }
+        span.tag
+        {
+            color: darkorange;
+        }
+        span.blue
+        {
+            color: rgb(105, 164, 210);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        JavaScript - Displaying Document Properties
+    </h1>
+    <h1>
+        A004JS
+    </h1>
+    <p>The following includes several properties of the window<strong>.document</strong>.object.</p>
+<ul>
+    <li>URL</li>
+    <li>title</li>
+    <li>lastModified</li>
+</ul>
+<p>These properties are referenced with the following code (using dot notation):</p>
+
+
+
+        <div id="listyle">
+            <li><strong>window.document.URL</strong> - This property gives the domain name and path on the server or computer </li>
+            <li><strong>window.document.title</strong> - This property gives the title used on the Web page</li>
+            <li><strong>window.document.lastModified</strong> - This property gives the date the Web page was last modified</li>
+        </div>
+
+        <p>Here are the window.document properties for this page:</p>
+
+        <script>
+            // Displaying document properties
+            window.document.write('<p id="highlight">');
+            window.document.write('<strong>URL:</strong>' + window.document.URL);
+            window.document.write('<br><strong>title:</strong>' + window.document.title);
+            window.document.write('<br><strong>lastModified:</strong>' + window.document.lastModified);
+            window.document.write('</p>')
+        </script>
+
+<p>    An important side note: The + symbol is used to join text together (it is called concatination)</p>
+
+<p>    Here's an example of using + (concatination) to join "URL:" and window.document.URL</p>
+
+<p>    window.document.write("URL:" + window.document.URL);</p>
+
+        here's the code to <strong>display</strong> the documents properties:
+
+</body>
+<pre>
+    <code>
+        <span class="tag">&lt;script&gt;</span>
+            <span class="comment">// Displaying document properties</span>
+            window.document.write<span class="blue">('&lt;p id="highlight"&gt;')</span>;
+            window.document.write<span class="blue">('&lt;strong&gt;URL:&lt;/strong&gt;' + window.document.URL)</span>;
+            window.document.write<span class="blue">('&lt;br&gt;&lt;strong>title:&lt;/strong&gt;' + window.document.title)</span>;
+            window.document.write<span class="blue">('&lt;br&gt;&lt;strong&gt;lastModified:&lt;/strong&gt;' + window.document.lastModified)</span>;
+            window.document.write<span class="blue">('&lt;/p&gt;')</span>
+        <span class="tag">&lt;/script&gt;</span>
+    </code>
+</pre>
+
+</html>

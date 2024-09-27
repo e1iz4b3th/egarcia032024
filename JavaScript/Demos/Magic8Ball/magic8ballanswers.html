@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball Answers</title>
+    <style>
+        body
+        {
+            background-color: pink;
+        }
+        #answers
+        {
+            height: 10rem;
+            width: 10rem;
+            margin: auto;
+            background-color: rgb(254, 255, 172);
+            border: 1px soild black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Magic 8 Ball Answers</h1>
+
+    <div id="answers">
+
+    </div>
+
+    <script>
+        // Create array variable for magic 8 ball answers
+        let answers = [];
+
+        // Populate array with index values
+        answers[0] = "It is certain";
+        answers[1] = "It is decidedly so";
+        answers[2] = "without a doubt";
+
+        window.alert(answers[2]);
+
+        //Assign answer to answer box
+        let magic8BallDiv;
+
+        magic8BallDiv = window.document.querySelector("#answers");
+        magic8Ball.style.textAlign="center";
+        magic8BallDiv.style.padding="1rem";
+        magic8BallDiv.innerHTML = answers[2];
+    </script>
+    
+</body>
+</html>

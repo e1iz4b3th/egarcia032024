@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Grid Areas - On Your Own 1</title>
+<style>
+body
+{
+    background-color:#ffe877;
+    font-family: fantasy;
+}
+#container
+{
+    background-color:hsl(265, 26%, 31%);
+    width:80%;
+    max-width: 800px;
+    padding: 2rem;
+    margin: auto;
+    height: 1700px;
+    border: 3px solid #261d35;
+}
+#wrapper
+{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "media media media"
+    "main main aside"
+    "card1 card2 card3"
+    "footer footer footer"
+    "details details details";
+}
+#pageheader{
+    padding: 1.5rem;
+    box-sizing: border-box;
+    background-color: rgb(220, 111, 43);
+    min-height: 150px;
+    grid-area: header;
+    border: 3px solid #8e4f18;
+    border-bottom: none;
+    color: rgb(247, 189, 147);
+}
+#mainnav
+{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(100, 216, 212);
+    min-height: 100px;
+    grid-area: nav;
+    border: 3px solid #2f6164;
+    border-bottom: none;
+    color: rgb(203, 255, 255);
+}
+#intromedia{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color:rgb(204, 236, 122);
+    min-height: 260px;
+    grid-area: media;
+    border: 3px solid #469d3e;
+    border-bottom: none;
+    color: #e4ffe3;
+}
+#pagemain{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    min-height: 350px;
+    grid-area: main;
+    border: 3px solid #858585;
+    border-bottom: none;
+    border-right: none;
+    color: #b5b5b5;
+}
+#pageaside
+{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #23ebbf;
+    min-height: 350px;
+    border: 3px solid #5dab97;
+    grid-area: aside;
+    color: rgb(182, 255, 233);
+}
+#card001
+{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(235, 107, 75);
+    min-height: 200px;
+    grid-area: card1;
+    border: 3px solid #a63737;
+    border-bottom: none;
+    color: #eea698;
+}
+#card002
+{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(152, 221, 244);
+    min-height: 200px;
+    grid-area: card2;
+    border: 3px solid #6aa6aa;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: rgb(224, 252, 251);
+}
+#card003
+{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color:rgb(183, 223, 192);
+    min-height: 200px;
+    grid-area: card3;
+    border: 3px solid #59946f;
+    border-bottom: none;
+    color: rgb(231, 255, 234);
+}
+#pagefooter
+{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color:#f0da31;
+    min-height: 100px;
+    border: 3px solid #8b7e2b;
+    grid-area: footer;
+    color: rgb(255, 255, 218);
+}
+#pagedetails
+{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(189, 189, 189);
+    min-height: 200px;
+    grid-area: details;
+    border: 3px solid #565656;
+    border-top: none; rgb(61, 61, 61);
+    color: #ebebeb;
+}
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="wrapper">
+        <header id="pageheader">Header</header>
+        <nav id="mainnav">Nav</nav>
+        <div id="intromedia">Media</div>
+        <main id="pagemain">Main</main>
+        <aside id="pageaside">Aside</aside>
+        <section id="card001">Card1</section>
+        <section id="card002">Card2</section>
+        <section id="card003">Card3</section>
+        <footer id="pagefooter">Footer</footer>
+        <footer id="pagedetails">Details</footer>
+    </div>
+</div>
+</body>
+</html>

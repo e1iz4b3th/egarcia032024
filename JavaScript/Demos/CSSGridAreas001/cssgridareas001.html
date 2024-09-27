@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Css Grid Areas</title>
+<style>
+body{
+    background-color: #000000;
+}
+#container{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "media media media media"
+    "navigation main main aside"
+    "footer footer footer footer"
+    "subfooter subfooter subfooter subfooter";
+    border: 5px solid rgb(255, 255, 255);
+}
+header{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(240, 189, 162);
+    min-height: 150px;
+    grid-area: header;
+    color:#be8762;
+    
+}
+#media{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(171, 203, 214);
+    min-height: 150px;
+    grid-area: media;
+    color:#639dae;
+}
+#navigation{
+    Padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(197, 197, 222);
+    color: rgb(147, 147, 175);
+    min-height: 150px;
+    grid-area: navigation;
+}
+main{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(193, 231, 202);
+    min-height: 150px;
+    grid-area: main;
+    color:rgb(154, 181, 165);
+}
+aside{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: lightpink;
+    min-height: 150px;
+    grid-area: aside;
+    color:rgb(226, 134, 165);
+}
+footer{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #f9f2ca;
+    min-height: 150px;
+    grid-area: footer;
+    color:#c7be91;
+}
+#subfooter{
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(209, 104, 104);
+    color: rgb(153, 64, 64);
+    min-height: 150px;
+    grid-area: subfooter;
+    
+}
+</style>
+</head>
+<body>
+<div id="container">
+    <header>Header</header>
+    <div id="media">Media</div>
+    <nav id="navigation">Navigation</nav>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+    <footer id="subfooter">Subfooter</footer>
+</div>
+</body>
+</html>

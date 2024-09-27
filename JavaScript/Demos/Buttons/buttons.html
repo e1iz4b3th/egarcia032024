@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons + JavaScript</title>
+    <style>
+        button
+        {
+            background-color: linen;
+            border-radius: 25px;
+            padding: 0.5rem;
+        }
+        .display
+        {
+            height: 100px;
+            width: 100px;
+            background-color: lavenderblush;
+            margin: 2rem auto;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="ChangeDivOne()">Change Div 1</button>
+    <button onclick="modifyDivDos()">Change Div 2</button>
+    <button onclick="divthree()">Change Div 3</button>
+    <button>Change Div 4</button>
+
+    <hr />
+
+    <div class="display" id="d001">d001</div>
+    <div class="display" id="d002">d002</div>
+    <div class="display" id="d003">d003</div>
+    <div class="display" id="d004">d004</div>
+
+    <script>
+        // Create functions
+        function ChangeDivOne()
+        {
+            // Create a variable 
+            let d1;
+            // Assign a value to the variable
+            d1 = window.document.querySelector('#d001');
+            //window.alert(d1);
+            d1.style.backgroundColor = 'pink';
+            d1.style.color = 'white';
+        }
+
+        function modifyDivDos()
+        {
+        let div2;
+        div2 = window.document.querySelector('#d002');
+        div2.style.borderRadius = '50%';
+        }
+
+        function divthree()
+        {
+            let div3;
+            div3 = window.document.querySelector('#d003')
+            div3.style.height = '200px';
+            div3.style.backgroundColor = 'lightyellow';
+            div3.style.color = "lightpink";
+        }
+
+        function divfour()
+        {
+            let div4;
+            div4 = window.document.querySelector('#d004')
+            div4.borderRadiu = '30%'
+        }
+        
+    </script>
+
+</body>
+</html>

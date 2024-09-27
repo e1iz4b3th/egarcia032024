@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029j3a2aH - Keyframes on Hover</title>
+    <style>
+        body
+        {
+            background-color: darkkhaki;
+        }
+        h1
+        {
+            color: rgb(166, 143, 188);
+            text-align: center;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(253, 247, 224);
+            margin: auto;
+            margin-top: 20px;
+        }
+        #mk
+        {
+            background-color: rgb(242, 255, 176);
+            margin-top: 50px;
+        }
+        #mk:hover
+        {
+            animation-name: rotate;
+            animation-duration: 1.3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        #may
+        {
+            background-color: rgb(255, 255, 166);
+            margin-top: 50px;
+        }
+        #may:hover
+        {
+            animation-name: colorchange;
+            animation-duration: .5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        #kay
+        {
+            background-color: rgb(136, 143, 93);
+            margin-top: 50px;
+        }
+        #kay:hover
+        {
+            animation-name: Scale;
+            animation-duration: .5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes rotate
+        {
+            from{
+                transform: rotate(9deg);
+
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes colorchange
+        {
+            25%{
+                background-color: red;
+            }
+            50%{
+                background-color: blue;
+            }
+            75%
+            {
+                background-color: blueviolet;
+            }
+            100%
+            {
+                background-color: chartreuse;
+            }
+        }
+        @keyframes Scale
+        {
+            from{scale: 100%;}
+            to{scale:26%}
+        }
+    </style>
+</head>
+<body>
+    <h1>A029j3a2aH - Keyframes on Hover</h1>
+    <div id="mk"></div>
+    <div id="may"></div>
+    <div id="kay"></div>
+</body>
+</html>

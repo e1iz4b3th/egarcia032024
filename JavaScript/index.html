@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth Garcia - Portfolio</title>
+
+    <style>
+        body
+        {
+            background-color: #a0954b;
+            color:white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            line-height: 1.7;
+            background-image: url(ImagesNemma/forestbcg.jpg);
+            background-attachment:fixed;
+            background-size: cover;
+        }
+        #container
+        {
+            background-color:#281a10;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem;
+            max-width: 1200px;
+            border-radius: 1.5rem;
+        }
+        #wrapper
+        {
+            /* border: 1px solid silver; */
+            border-radius: 1.9rem;
+            margin: 0 auto;
+        }
+        #pageheader
+        {
+            background-color:#262918 ;
+            height: 250px;
+            padding: 2.5rem;
+            border-radius: 1.5rem 1.5rem 0 0;
+            background-image: url(ImagesNemma/grassybcg.webp);
+            background-size: cover;
+        }
+        #logo
+        {
+            width: 150px;
+            height: 140px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            position: relative;
+            left: -90px;
+            top: -80px;
+            background-image: url(ImagesNemma/egnemmalogo.png);
+            background-position: center center;
+        }
+        
+        blockquote
+        {
+            text-align: center;
+            font-size: 23px;
+            color: #fa8956;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        }
+        #quote
+        {
+            text-align: right;
+            width: 80%;
+            margin: auto;
+            color:#ac302f ;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        }
+        #pagenav
+        {
+            background-color:#1c2d2a;
+            padding: 1rem;
+            color: rgb(119, 163, 138);
+            border-top: 3px solid #967e1a;
+            border-bottom: 3px solid #967e1a;
+        }
+        #pagenav>a
+        {
+            color:rgb(82, 110, 94); 
+        }
+        #media
+        {
+            min-height: 250px;
+            background-color: #5e5e28;
+            padding: 1rem;
+            color: white;
+        }
+        iframe
+        {
+            width: 80%;
+            aspect-ratio: 16/9;
+            margin: auto;
+            display:block ;
+        }
+        #pagemain
+        {
+            background-color:rgb(226, 194, 168);
+            color: #ac3030;
+            min-height:250px;
+            padding: 1rem;
+        }
+        #Nemmaimage
+        {
+            width:95%;
+            display: block;
+            margin:0 auto;
+            border-radius: 0.5rem;
+        }
+
+        #career
+        {
+            min-height: 200px;
+            background-color:#5e5e28;
+            color: rgb(60, 62, 47);
+            padding: 1rem;
+        }
+        .semester
+        {
+            min-height: 200px;
+            background-color:#bd8206;
+            color: white;
+            padding: 1rem;
+            border-top: 3px solid #844b1c;
+            transition: 1s;
+        }
+        .semester:hover
+        {
+            scale: 105%;
+        }
+        #semester1
+        {
+            color: #854612;
+        }
+        #semester2
+        {
+            color: #854612;
+        }
+        #pagefooter
+        {
+            background-color:white;
+            color: #3c2424;
+            padding: 1rem;
+            text-align: center;
+        }
+        #pagefooter>a
+        {
+            color: chocolate;
+        }
+        #subfooter
+        {
+            min-height: 150px;
+            background-color:#1c2d2a;
+            color: #cfb37a;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 0 0 1.5rem 1.5rem;
+            background-image: url(ImagesNemma/nemmafixedcover.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            
+        }
+        #subfooter>a 
+        {
+            color: #7f6a42;
+        }
+        #subfooter>:visited
+        {
+            color: rgb(185, 187, 180);
+        }
+        #flexbox001
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        #semester1 , #semester2
+        {
+            flex: 1;
+        }
+        @media screen and (min-width :700px)
+        {
+            #flexbox001{flex-direction: row;}
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+                
+
+                <header id="pageheader">
+
+                    <div id="logo">
+                        
+
+                    </div>
+                    
+                    <blockquote>
+                        &hearts; He looked at her the way all womean want to be looked at by a man.  &hearts;
+                    </blockquote>
+
+                    <p id="quote">
+                        - F.Scott Fitzgerald  &star;
+                    </p>
+
+                </header>
+
+                <nav id="pagenav">
+                    <a href="#Career">Career</a> |
+                    <a href="#Semester1">Semester 1</a> |
+                    <a href="#Semester2">Semester 2</a>
+                </nav>
+
+                <div id="media">
+                    <iframe  src="https://www.youtube.com/embed/WvHc1jShsz0?si=DyJsdPQkNfplmMme" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                    
+                <main id="pagemain">
+                    <h1>&hearts; Elizabeth Garcia - Portfolio &hearts;</h1>
+                    <img id="Nemmaimage" src="ImagesNemma/HawaiiNemma.webp" alt="Nemma">
+                    
+
+                    <p>
+                        Welcome to my portfolio. My name is Elizabeth Garcia and I'm 16 years old. My hobbies are drawing and writing. I love the color pink, dinosaurs, cats, and my favorite show is Total Drama. As you can tell, my portfolio is mainly about two of characters from the show, Noah and Emma.
+                    </p>
+            
+                </main>
+                <div id="hearts"></div>
+                <section id="career">
+                    <h2>  &hearts; Career  &hearts;</h2>
+                    <a name="Career"></a>
+                    <ul>
+                        <li>
+                            <a href="Career/Elizabeth Garcia - Career Action Plan Worksheet.pdf">Career Action Plan</a>
+                        </li>
+                    </ul>
+                </section>
+
+<div id="flexbox001">
+                                        <section id="semester1" class="semester">
+                                            <h2>  &hearts; Semester 1  &hearts;</h2>
+                                            <a name="Semester1"></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="Semester1/A001JS/a001js.html">A001JS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester1/A002JS/a002js.html">A002JS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester1/A003JS/a003js.html">A003JS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester1/A004JS/a004js.html">A004JS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester1/A005JS/a005js.html">A005JS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester1/A006JS/a006js.html">A006JS</a>
+                                                </li>
+                                                <li><a href="Activities/ResponsiveWebDesign/responsivewebdesign.html">On Your Own 1 - Add Media Queries</a></li>
+                                                <li><a href="Semester1/A029J3/a029j3.html">A029J3</a></li>
+                                            </ul>
+                                        
+                                        </section>
+    
+                                        <section id="semester2" class="semester">
+                                            <h2>  &hearts; Semester 2  &hearts;</h2>
+                                            <a name="Semester2"></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="Projects/NewYorkCity/newyorkcity.html">New York City Project</a>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <a href="Demos/ForLoopMultiplicationTable/foorloopmultiplicationtable.html">For Loop Multiplication Table</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Demos/ForLoopMultiplicationTableadvance/foorloopmultiplicationtableadvanced.html">For Loop Multiplication Table Advanced</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Activities/Popsicle/popsicle.html">Popsicle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester2/A029J3A/a029j3a.html">A029J3A</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester2/A029G8/a029g8.html">A029G8</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester2/A029J3A2/a029j3a2.html">A029J3A2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester2/A029J3A2GRFX/ a029j3a2grfx.html">A029J3A2GRFX</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester2/A029J3A2A/a029j3a2a.html">A029J3A2A</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester2/A029J3A2AGRPHX/a029j3a2agprhx.html">A029J3A2AGRPHX</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester2/A029j3a2aH/a029j3a2ah.html">A029j3a2aH</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Semester2/A029j3a2ahj/a029j3a2ahj.html">A029j3a2ahj</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Demos/CSSGridAreas001/cssgridareas001.html">Grid Areas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Demos/RandomNumbers/randomnumbers.html">Random Numbers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Activities/RandomBugGenerator/randombuggenerator.html">Random Bug Generator</a>
+                                                </li>
+                                                <li><a href="Activities/GridAreasonyourOwn2/gridareasonyourown2.html">Grid Areas on your Own2</a></li>
+                                                <li>
+                                                    <a href="Activities/FlexLayout/flexllayout.html">Flex Layout</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Activities/GridLayout/gridlayout.html">Grid Layout</a>
+                                                </li>
+    
+    
+                                                    <a href="Demos/RandomColorBox/randomcolorbox.html">set Interval - ColorBox</a>
+                                                </li>
+                                                <li><a href="Demos/Magic8Ball/magic8ball.html">Magic8 Ball</a></li>
+                                                <li><a href="Projects/NewYorkCity/Hamburger menu/hamburgermenu.html">Hamburger menu</a></li>
+                                            </ul>
+    
+                                        </section>
+</div>
+
+                <footer id="pagefooter">
+                    <a href="https://chsserver01.org">Chagoyan</a> |
+                    <a href="https://chsserver01.org/chaggy.net/colortheory/colorscheme2/index-en.html">color scheme</a> |
+                    <a href="https://coalingahuron.aeries.net/student/LoginParent.aspx">aeries</a> |
+
+                    <a href="https://chs.chusd.org/">Chs</a> |
+                    <a href="https://weareimago.com/">imago</a> |
+                    <a href="https://app.listenwise.com/students">listenwise</a> |
+
+                    <a href="google.com">google</a> |
+                    <a href="https://classroom.google.com/u/0/h?pli=1">Classroom</a> |
+                    <a href="https://app.minga.io/landing/country">minga</a> 
+                </footer>
+
+                <footer id="subfooter">
+                <a href="https://totaldrama.fandom.com/wiki/Total_Drama_Wiki">Td Wiki</a> |
+                <a href="https://shipping.fandom.com/wiki/Nemma">Td Nemma Wiki </a>|
+                <a href="https://www.instagram.com/ilovepinkiglolz/">Instagram</a>
+
+                <p> &copy; Elizabeth Garcia 2023 - 
+
+                    <script>
+                        window.document.write(new Date().getFullYear());
+                    </script>
+                </p>
+
+                    </footer>
+                
+
+
+        </div>
+        <!-- end wrapper -->
+    </div>
+    <!-- end container -->
+</body>
+</html>

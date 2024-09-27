@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamburger Menu</title>
+<style>
+
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+h1, p{
+    padding: 1rem;
+}
+
+
+header#pageheader{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+
+img#hamburgermenu{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+nav#pagenav{
+    background-color:  rgb(244, 192, 222);
+    padding: 1rem;
+    text-align: center;
+    }
+nav#pagenav>ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 40%;
+    margin: auto;
+}
+
+
+       /* Modal Styling */
+div#modalmenu{
+    background-color: rgb(244, 192, 222);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+img#closex{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+    #modalheader{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid silver;
+}
+nav#modalnav{
+    line-height: 2;
+    padding: 1rem;
+    padding-top: 150px;
+}
+    nav#modalnav>ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+    @media screen and (min-width:480px)
+    {
+        body{background-color: rgb(251, 251, 152);
+        }
+        img#hamburgermenu{display: none;}
+        nav#pagenav{display: block;}
+        
+    }
+    @media screen and (min-width:760px)
+    {
+        body{background-color: rgb(230, 255, 184);}
+    }
+</style>
+</head>
+
+
+<body>
+<!-- Begin Modal-->
+    <div id="modalmenu">
+        <header id="modalheader">
+        <h1>Hamburger Menu Links</h1>
+        <img src="Images/closex.png" alt="Close X" id="closex">
+        </header>
+        <nav id="modalnav">
+            <a href="https://chsserver01.org/2023/egarcia042023/">Garcia</a>
+            <br>
+            <a href="https://yahoo.com/">Yahoo</a>
+            <br>
+            <a href="https://google.com/">Google</a>
+            <br>
+        </nav>
+    </div>
+<!-- End Modal Menu-->
+
+
+<header id="pageheader">
+    <h1>Hamburger Menu</h1>
+    <img id="hamburgermenu" src="Images/hamburgermenu.png" alt="Hamburger Menu Icon">
+</header>
+
+
+<nav id="pagenav">
+    <ul>
+        <li><a href="https://chsserver01.org/2023/egarcia042023/">Garcia</a></li>
+        <li><a href="https://yahoo.com">Yahoo</a></li>
+        <li><a href="https://google.com">Google</a></li>
+    </ul>
+</nav>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugit a dicta eaque, ullam eligendi rerum, pariatur perspiciatis unde cumque officia qui. Pariatur nobis maxime, reiciendis modi laborum repudiandae placeat optio accusantium ipsam quae vitae itaque enim molestiae error impedit! Reiciendis modi nostrum hic, nisi deleniti, eos minima error, dolor et delectus harum debitis dicta cumque? Laboriosam id laudantium, cum sed optio nam fuga nobis nemo culpa obcaecati similique architecto ipsam voluptatibus quaerat veritatis sunt odio, cupiditate blanditiis officia! Totam!</p>
+
+
+<script>
+       // Create variable for hamburger menu and set value
+    const hamburgermenu = window.document.querySelector('#hamburgermenu');
+       // Make hamburgermenu interactuive by adding a click event
+    hamburgermenu.addEventListener('click', showModalMenu);
+
+
+    function showModalMenu(){
+           // Create and set variable for modalmenu
+    const displayModalMenu = window.document.querySelector('#modalmenu');
+       // Make modalmenu visible
+    displayModalMenu.style.display = "block";
+    }
+
+
+    const closeX = window.document.querySelector('#closex');
+    closeX.addEventListener('click', closeModalMenu);
+
+
+function closeModalMenu()
+{
+    const hideModalMenu = window.document.querySelector('#modalmenu')
+    hideModalMenu.style.display = "none";
+}
+</script>
+</body>
+</html>
+

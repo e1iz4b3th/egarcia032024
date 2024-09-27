@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables - DOM Object, Event, Function</title>
+    <style>
+        div
+        {
+            height: 150px;
+            width: 150px;
+            border: 4px solid black;
+            padding: 1rem;
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variables - DOM Object, Event, Function</h1>
+
+    <div id="d1" onclick="changeRed()">d1</div>
+    <div id="d2" onmouseover="changeBlue()">d2</div>
+    <div id="d3" ondblclick="changeGreen">d3</div>
+    <div id="d4">d4</div>
+
+    <script>
+
+        // Create functions
+        // A function is code block that runs when called
+        // A function is a mini program
+        function changeRed()
+        {
+        // Style using dot notation
+        window.document.getElementById('d1').style.backgroundColor = "red";
+        }
+
+        function changeBlue()
+        {
+            window.document.getElementById('d2').style.borderRadius = "50%";
+            window.document.getElementById('d2').style.padding = '2rem';
+
+        }
+
+        function changeGreen()
+        {
+                // Create DOM object variable
+                let myDiv;
+                myDiv = window.document.getElementById('d3');
+                myDiv.window.style.backgroundColor = "magenta";
+                myDiv.style.border = '4px solid red';
+                myDiv.style.marginLeft = '500px';
+                myDiv.style.transform = 'scale(.25)';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        #wrapper{
+            border: 3px solid white;
+            background-color: rgb(161, 161, 152);
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 67px;
+        }
+        #main
+        {
+            width: 300px;
+            min-height: 300px;
+            background-color: rgb(254, 255, 193);
+            padding: 1rem;
+            flex-basis: 100%;
+        }
+        #flexbox001
+        {
+            display: flex;
+        }
+        #Flexbox002
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #Article01
+        {
+            width: 100px;
+            min-height: 100px;
+            background-color: rgb(168, 214, 143);
+            padding: 1rem;
+        }
+        #Article02
+        {
+            width: 100px;
+            min-height: 100px;
+            background-color: rgb(168, 214, 143);
+            padding: 1rem;
+        }
+        #Article03
+        {
+            width: 100px;
+            min-height: 100px;
+            background-color: rgb(168, 214, 143);
+            padding: 1rem;
+            
+        }
+        #Article04
+        {
+            width: 100px;
+            min-height: 100px;
+            background-color: rgb(168, 214, 143);
+            padding: 1rem;
+        }
+        #Flexbox003
+        {
+            display: flex;
+            flex-wrap:wrap;
+        }
+        #Nav
+        {
+            background-color: rgb(249, 199, 108);
+            min-height: 150px;
+            width: 150px;
+        }
+        #section01
+        {
+            background-color: rgb(151, 202, 213);
+            min-height: 100px;
+            width: 300px;
+        }
+        #section02
+        {
+            background-color: rgb(151, 202, 213);
+            min-height: 100px;
+            width: 300px;
+        }
+        #aside
+        {
+            background-color: pink;
+            width: 150px;
+        }
+        #footer
+        {
+            background-color: blueviolet;
+            width: 30px;
+        }
+        </style>
+    </head>
+<body>
+    <div id="wrapper">
+        <div id="flexbox001">
+            <main id="main">main</main>
+            <article id="article01">article01</article>
+            <article id="article02">article02</article>
+            <article id="article03">article03</article>
+            <article id="article04">article04</article>
+        </div>
+        <div id="flexbox002">
+            <nav id="nav">nav</nav>
+            <section id="section01">section01</section>
+            <aside id="aside">aside</aside>
+        </div>
+        <div id="flexbox003">
+            <section id="section02"></section>
+            <footer id="footer"></footer>
+        </div>
+    </div>
+    
+</body>
+</html>

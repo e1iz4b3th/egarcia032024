@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2A</title>
+    <style>
+        body
+        {
+            background-color:black;
+        }
+        h1, h2
+        {
+            text-align: center;
+            color:white;
+            text-transform:uppercase;
+        }
+        #rotator
+        {
+            height:2rem;
+            width:8rem;
+            background-color: hotpink;
+            margin-left:0rem;
+
+            animation-name:rotate;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes rotate
+        {
+        from
+        {
+            margin-left: 0;
+            background-color: hotpink;
+            transform: rotate(0deg);
+        }
+        to
+        {
+            margin-left: 20rem;
+            background-color:rgb(71, 95, 24);
+            transform: rotate(1800deg);
+        }
+
+        }
+        #jump
+        {
+            width:22rem;
+            height:3rem;
+            background-color: goldenrod;
+
+            animation-name:jump;
+            animation-duration:.2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes jump
+        {
+            from{}
+            to
+            {
+                transform:translate(0px, -80px);
+                
+            }
+        }
+        #LU
+        {
+            width:8rem;
+            height:12rem;
+            background-color:#531a6d;
+
+            animation-name: LU;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-direction:alternate;
+
+
+        }
+        @keyframes LU
+        {
+            from
+            {
+                background-color: #531a6d;
+            }
+            to
+            {
+                background-color: #84174c;
+                transform: scale(000);
+            }
+        }
+        #IS
+        {
+            width:9rem;
+            height:6rem;
+            background-color:olivedrab;
+
+            animation-name: IS;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes IS
+        {
+            from
+            {
+                background-color:rgb(74, 100, 147);
+                margin-left: 0rem;
+            }
+            to
+            {
+                transform: none;
+                margin-left: 20rem;
+            }
+        }
+        #AL
+        {
+            width: 20rem;
+            height: 10rem;
+            background-color:dodgerblue;
+
+            animation-name: AL;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+        }
+        @keyframes AL
+        {
+            from
+            {
+                background-color: dodgerblue;
+            }
+            to
+            {
+                transform: translate(0px,-80px);
+                background-color: aliceblue;
+            }
+        }
+        #DO
+        {
+            width: 40rem;
+            height: 2rem;
+            background-color: red;
+
+            animation-name: DO;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes DO
+        {
+            from
+            {
+                background-color: red;
+            }
+            to
+            {
+                transform: scale(000);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>A029J3A2A</h1>
+    <h2>Keyframes From To</h2>
+
+    <div id="rotator"></div>
+    <div id="jump"></div>
+    <div id="fall"></div>
+    <div id="LU"></div>
+    <div id="IS"></div>
+    <div id="AL"></div>
+    <div id="DO"></div>
+</body>
+</html>

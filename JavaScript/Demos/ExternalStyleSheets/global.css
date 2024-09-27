@@ -1,0 +1,30 @@
+body
+{
+    background-color: rgb(185, 238, 204);
+}
+h1
+{
+    background-color: rgb(159, 203, 173);
+    text-align: center;
+    padding: 1rem;
+}
+a
+{
+    color: white;
+}
+a:hover
+{
+    color: rgb(120, 185, 118);
+}
+nav
+{
+    background-color: rgb(187, 214, 187);
+    padding: 1rem;
+}
+ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}

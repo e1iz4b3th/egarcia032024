@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A030CAS</title>
+    <style>
+        html
+        {
+            height:100%;
+            background-image:url(Images/nightsky.avif);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        body
+        {
+            overflow: hidden;
+        }
+
+        #asteroidcontainer
+        {
+            width: 210px;
+            height: 400px;
+
+            animation-name: fly;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes fly
+        {
+            from{margin-left: -150px;}
+            to{margin-bottom:100%;}
+        }
+
+        #asteroid
+        {
+            width:200px;
+            height:200px;
+            margin-top: 100px;
+
+
+            background-image:url(Images/asteroidal-lu.png);
+            background-repeat:no-repeat;
+
+            animation-name: asteroid;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes asteroid
+        {
+            from
+            {
+                margin: -40rem;
+            }
+            to
+            {
+                margin: 80rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="asteroidcontainer">
+        <div id="asteroid"></div>
+    </div>
+</body>
+</html>

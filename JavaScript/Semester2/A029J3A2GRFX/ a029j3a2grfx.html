@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2GRFX - Complex Transitions</title>
+    <style>
+        body
+        {
+            background-color: rgba(236, 170, 195, 0.511);
+        }
+        h1
+        {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        div#flower
+        {
+            height: 40px;
+            width: 40px;
+            background-image: url(images/smilingflower.png);
+            background-size: cover;
+            background-color:none;
+            position: relative;
+            bottom: -70px;
+            left: 100px;
+            transition-delay:.5em ;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+            position: relative;
+            left: 150px;
+            bottom: -90px;
+        }
+        div#flower:hover
+        {
+            background-color: none;
+            transform: scale(7) rotate(360deg);
+        }
+        div#snail
+        {
+            height: 150px;
+            width: 210px;
+            background-color: none;
+            background-image: url(images/snail.png);
+            background-size: cover;
+            transition-delay:0s;
+            transition-property: transformation;
+            transition-duration: 8s;
+            transition-timing-function: linear;
+            position: relative;
+            left: 1300px;
+            bottom:-600px;
+            
+        }
+        div#snail:hover
+        {
+            background-color: none;
+            transform: translateX(-700px);
+        }
+        div#earth
+        {
+            height: 500px;
+            width: 500px;
+            background-image: url(images/earth.png);
+            background-size: cover;
+            transition-delay:0s;
+            transition-property: all;
+            transition-duration: 7s;
+            transition-timing-function: linear;
+            position: relative;
+            top: 35px;
+            left: 80px;
+        }
+        div#earth:hover
+        {
+            transform: rotate(500deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>A029J3A2GRFX - Complex Transitions</h1>
+    <div class="Box" id="flower"></div>
+    <div class="Box" id="snail"></div>
+    <div class="Box" id="earth"></div>
+</body>
+</html>

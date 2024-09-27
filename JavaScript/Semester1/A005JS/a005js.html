@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A005JS</title>
+    <style>
+    ul{list-style-type: none;}
+    .script{color: orange;}
+    .comment{color: green;}
+    </style>
+</head>
+<body>
+    <h1>JavaScript Changing Properties</h1>
+    <h2>A005JS</h2>
+
+
+<p>As previously noted, JavaScript is a scripting language that uses objects. For example, your browser window is an object, which contains the document object. The document object, in turn, contains the body object, which includes the style object.</p>
+
+
+<p>We can refer to these objects via JavaScript by using <strong>dot notation.</strong> For example, "window.document.body.style"</p>
+
+
+<p>Using dot notation, we can access objects and change their properties.</p>
+
+
+<p>The following dot notation reference can change two properties of the body.style object. We use window.document.body.style to access that object. These properties are referenced with the following code:</p>
+
+
+<ul>
+<li>    <strong>window.document.body.style.backgroundColor</strong> - This property is the background color of the body.</li>
+<li>    <strong>window.document.body.style.color</strong> - This property is the text color of the body.</li>
+</ul>
+
+
+<p>Here, we change the window.document.body.style. properties as follows:</p>
+<pre id="display">
+    <span class="script">&lt;script&gt;</span>
+    <span class="comment">// Change the style object properties</span>
+
+
+    <span class="comment">// Change the background color</span>
+    window.document.body.style.backgroundColor="indianred";
+
+
+    <span class="comment">// Change the text color</span>
+    window.document.body.style.color="white";
+
+
+    <span class="script">&lt;/script&gt;</span>
+</pre>
+<script>
+    let codeBlock
+    codeBlock = window.document.querySelector('#display');
+    codeBlock.style.backgroundColor="#333333";
+    codeBlock.style.padding="2.5rem";
+    codeBlock.style.color="white";
+</script>
+</body>
+</html>

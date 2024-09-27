@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth Garcia - Portfolio</title>
+    <style>
+        :root
+        {
+            
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body 
+        {
+            background-size:cover;
+            background-repeat: no-repeat;
+            
+        }
+        .container
+        {
+            background-color: rgb(255, 255, 255);
+            min-height: 12rem;
+            max-width: 75rem;
+            margin: auto;
+            padding: 1rem 3rem 1rem 3rem;
+            position: relative;
+            border: 1px solid black;
+        }
+        #pageheader
+        {
+            min-height: 200px;
+            background-color:#0000ff;
+            padding: 1rem;
+
+        }
+        #pageheader .container
+        {
+            background-image: url(Images/ls2mediumlaying.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #logo
+        {
+            width: 240px;
+            height: 240px;
+            background-color: none;
+            position: absolute;
+            top: -8px;
+            left: calc(50% - 100px);
+            border-radius: 50%;
+            transition: all 2s;
+            background-image: url(Images/Logo.png);
+            background-size: cover;
+        }
+        #pagenav
+        {
+            background-color:none;
+            min-height: 30px;
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            bottom: 0px;
+            left: calc(50% - 150px);
+        }
+        #pagenav a{
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        #pagenav a:hover
+        {
+            color: aqua;
+        }
+        #media
+        {
+            min-height: 300px;
+            background-color: rgb(47, 64, 146);
+            padding: 1rem;
+        }
+        #media h1
+        {
+            text-align: center;
+            font-size: 3rem;
+        }
+        #media h2
+        {
+            text-align: center;
+            font-size: 2rem;
+        }
+        #media blockquote
+        {
+        }
+        #pagecontent
+        {
+            min-height: 200px;
+            background-color: rgb(47, 64, 146);
+            padding: 1rem;
+        }
+        #Career
+        {
+            min-height: 200px;
+            background-color: gainsboro;
+            padding: 1rem;
+        }
+        #Semester1
+        {
+            min-height: 200px;
+            background-color: rgb(255, 255, 255);
+            padding: 1rem;
+        }
+        #Semester2
+        {
+            min-height: 200px;
+            background-color: rgb(255, 255, 255);
+            padding: 1rem;
+            display: none;
+        }
+        #pagefooter
+        {
+            background-color: black;
+            padding: 1rem;
+            text-align: center;
+        }
+        #pagefooter .container
+        {
+            min-height: 2rem;
+        }
+        #subfooter
+        {
+            min-height: 200px;
+            background-color: rgb(137, 38, 38);
+            padding: 1rem;
+        }
+        #top
+        {
+            background-image: url(Images/loganbacktotopwoword.png);
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border-radius: 50%;
+        }
+        #top a
+        {
+            text-decoration: none;
+            background-color: rgb(255, 255, 255);
+            opacity: 40%;
+        }
+
+        /* Media Queries */
+        @media only screen and (min-width: 320px)
+        {
+
+        }
+        @media only screen and (min-width: 768px)
+        {
+
+            #logo
+        {
+            left: 5%;
+        }
+            #pagenav
+            {
+                top: 0px;
+                right: 0px;
+                left: auto;
+                bottom: auto;
+            }
+
+
+        }
+        @media only screen and (min-width: 1024px)
+        {
+            
+        }
+        @media only screen and (min-width: 1200px)
+        {
+            #media
+            {height: 600px;}
+            #pageheader .container
+            {
+                background-color: rgb(83, 29, 29);
+            background-image: url(Images/longlayingdownls2.png);
+                background-size: contain;
+                background-position: center;
+ 
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Named anchor to navigate to the top -->
+    <a name="topanchor"></a>
+    <!-- begin pageheader -->
+    <header id="pageheader">
+
+        <div class="container">
+
+            <div id="logo"></div>
+            
+            <nav id="pagenav">
+                <section id="career">
+                    <div></div>
+                </section>
+            <a href="#Career">
+                Career 
+            </a>
+                | 
+            <a href="#Semester1">Semester 1 </a>
+                | 
+            <a href="#Semester2">Semester 2</a>
+            </nav>
+        </div>
+    </header>
+    <!-- end pageheader -->
+
+    <!-- begin media -->
+    <section id="media">
+        <h1>Elizabeth Garcia</h1>
+        <h2>Portfolio</h2>
+        <blockquote>Hard work always creates opportunities. And even when things are bad, just keep with it and be resilient.</blockquote>
+        <p id="quote">
+            - Logan Sargeant
+        </p>
+    </section>
+    <!-- end media -->
+
+    
+    <!-- begin pagecontent -->
+    <main id="pagecontent">
+
+        <div class="container">
+            <h1>Introduction</h1>
+            <p>Welcome to my Portfolio! My name is Elizabeth Garcia and this is my thrid year taking a webpage class. I really enojy it but I also enjoy other things like motosports, art, and watching total drama. My webpage this year is based on one of my favorite drivers Logan Sargeant, I decided to make this a day before he got replace and I'm coping, somehow. This is mainly now going to be in memory of him when he was in Williams, two years of F1 and one year of F2 with the team Williams Racing. I really enojy watching F1 with Lisandra and talking about it to her, It's one of the main things I do on my free time and I am glad that I got her into the sport and I have 
+        </p>
+
+        </div>
+        
+    </main>
+    <!-- end pagecontent -->
+    
+    <!-- begin career -->
+    <section id="Career">
+    <div class="container">
+    <a name="Career"></a>
+    <h2>Career</h2>
+    <ul>
+        <li>Letter of Introduction</li>
+        <li>Resume</li>
+        <li>References</li>
+        <li>Job Application</li>
+        <li>Career Plan</li>
+        <li>Work Samples</li>
+        <li>Certificates</li>
+    </ul>
+    </div>
+    </section>
+    <!-- end career -->
+    
+    <!-- begin semester1 -->
+<section id="Semester1">
+    <div class="container">
+    <a name="semester1"></a>
+    <h2>Semester1</h2>
+    <ul>
+        <li>A001</li>
+        <li>A002</li>
+        <li>A003</li>
+        <li>A004</li>
+    </ul>
+    </div>
+    </section>
+    <!-- end semester1 -->
+    
+    <!-- begin semester2 -->
+    <section id="Semester2">
+    <div class="container">
+    <a name="semester2"></a>
+    <h2>Semester2</h2>
+    <ul>
+        <li>A001</li>
+        <li>A002</li>
+        <li>A003</li>
+        <li>A004</li>
+    </ul>
+    </div>
+    </section>
+    <!-- end semester2 -->
+    
+
+    <!-- begin pagefooter -->
+    <footer id="pagefooter">
+        <div class="container">
+            <a href="" target="new">chago</a> | 
+            <a href="" target="new">color schemes</a> | 
+            <a href="" target="new">aeries</a> | 
+            <a href="" target="new">chs</a> | 
+            <a href="" target="new">mycareertech</a> | 
+            <a href="" target="new">google classroom </a> | 
+            <a href="" target="new">codepip</a> | 
+            <a href="" target="new">minga</a>
+        </div>
+    </footer>
+    <!-- end pagefooter -->
+    
+    <!-- begin subfooter -->
+    <footer id="subfooter">
+        <div class="container">
+            subfooter
+        </div>
+    </footer>
+    <!-- end subfooter -->
+    <div id="top">
+        <a href="#topanchor">Back to Top?</a>
+    </div>
+</body>
+</html>

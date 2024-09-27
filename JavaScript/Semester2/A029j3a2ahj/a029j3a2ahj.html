@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029j3a2aHJ - JavaScript Toggle </title>
+    <style>
+        body
+        {
+            background-color: brown;
+        }
+        h1
+        {
+            text-align: center;
+            color:#5f1313;
+        }
+        #container
+        {
+            height: 500px;
+            width: 1000px;
+            background-size: cover;
+            margin: auto;
+            position: relative;
+            background-image: url(images/206358625-photo-of-strawberries-on-a-farm-on-a-sunny-day-close-up-generative-ai.jpg);
+            border: 10px solid black;
+        }
+        #strawberry
+        {
+            height: 250px;
+            width: 300px;
+            background-size: cover;
+            position: absolute;
+            left: 340px;
+            top: 256px;
+            background-image: url(images/strawberry-2780489_1280.png);
+        }
+        .animatestrawberry
+        {
+            animation-name:grow;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+        }
+        @keyframes grow
+        {
+            0%{background-image: url(images/strawberry-2780489_1280.png);}
+            100%{
+                background-image: url(images/strawberry.png);}
+        }
+
+    </style>
+</head>
+<body>
+    <h1>A029j3a2aHJ - JavaScript Toggle </h1>
+<div id="container">
+    <div id="strawberry"></div>
+    <button onclick="addClass()">Toggle Animation</button>
+    <script>
+        let strawberry = window.document.querySelector('#strawberry')
+
+        function addClass()
+        {
+            strawberry.classList.toggle('animatestrawberry');
+        }
+    </script>
+</div>
+</body>
+</html>

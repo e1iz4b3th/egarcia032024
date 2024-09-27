@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Welcome to New York City</title>
+<style>
+    /* Moblie First Styles*/
+    body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url(Images/bodybackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    header {
+    background-color: black;
+    min-height: 100px;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    }
+
+    header h1
+    {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding-left: 75px;
+    }
+    #wrapper {
+    background-color: ;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    }
+    #topnav {
+    background-color: black;
+    min-height: 150px;
+    padding: 1rem;
+    }
+    #topnav ul
+    {
+        list-style-type: none;
+        padding: 0%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #topnav ul li
+    {
+        background-color: none;
+        border: 1px solid #333;
+        padding: 1rem;
+        text-transform: uppercase;
+        transition: all 1s;
+    }
+    #topnav ul li:hover
+    {
+        background-color: #333;
+    }
+    #media {
+    background-color: blue;
+    min-height: 300px;
+    padding: 1rem;
+    background-image: url(Images/mediabackground.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    }
+    main {
+    background-color: white;
+    color: #333;
+    min-height: 300px;
+    padding: 1rem;
+    line-height: 1.7;
+    }
+    main h1
+    {
+    text-align: center;
+    transition: all 1s;
+    }
+    main video
+    {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 640/360;
+    display: block;
+    margin: auto;
+    display: none;
+    }
+    #cards {
+    background-color: rgb(97, 97, 97);
+    min-height: 150px;
+    padding: 1rem;
+    }
+    article {
+    background-color: white;
+    min-height: 150px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    }
+    footer {
+    background-color: black;
+    min-height: 50px;
+    padding: 1rem;
+    text-align: center;
+    }
+    #medialogo
+    {
+        background-color: black;
+    }
+    #medialogo img
+    {
+        display: block;
+        margin: auto;
+    }
+    #logodesktop
+    {
+        display: none;
+    }
+    #cards
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    #cards article
+    {
+        background-color: red;
+        background-position: center center;
+        background-size: cover;
+        max-width: 400px;
+        aspect-ratio: 400/300;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    #cards article h3
+    {
+        background-color: rgba(0,0,0,0.5);
+        padding: 0.5rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        flex: 1;
+    }
+    #bronx
+    {
+        background-image: url(Images/bronxcard.jpg);
+    }
+    #brooklyn
+    {
+        background-image: url(Images/brooklyncard.jpg);
+    }
+    #manhattan
+    {
+        background-image: url(Images/mahattancard.jpg);
+    }
+    #queens
+    {
+        background-image: url(Images/queenscard.jpg);
+    }
+    #statenisland
+    {
+        background-image: url(Images/statenislandcard.jpg);
+    }
+    /*Desktop side*/
+    @media screen and (min-width:895px)
+    {
+        #topnav ul
+        {
+            flex-direction: row;
+        }
+        #topnav
+        {
+            min-height: 50px;
+            position: sticky;
+            top: 120px;
+        }
+        #topnav ul li
+        {
+            border: none;
+            padding: 0.5rem;
+        }
+        #topnav ul li:hover
+        {
+            background-color: black;
+        }
+        header
+        {
+            display: block;
+        }
+        #medialogo
+        {
+            display: none;
+        }
+        #wrapper
+        {
+            margin-top: 250px;
+        }
+        #logodesktop
+        {
+            display: block;
+            position: absolute;
+            top: -100px;
+            left: 0;
+        }
+        main h1
+        {
+            text-align: left;
+        }
+        main video
+        {
+            display: block;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to New York City</h1>
+    </header>
+
+    <div id="medialogo">
+        <img src="Images/newyorklogo.jpg" alt="New York City Logo">
+    </div>
+
+<div id="wrapper">
+    <nav id="topnav">
+
+        <img id="logodesktop"
+        src="Images/newyorklogo.jpg" 
+        alt="New York City Logo" 
+        width="200"
+        />
+
+        <ul>
+            <li>Home</li>
+            <li>Bronx</li>
+            <li>Brooklyn</li>
+            <li>Manhattan</li>
+            <li>Queens</li>
+            <li>Staten Island</li>
+        </ul>
+    </nav>
+
+    <div id="media"></div>
+
+<main>
+    <h2>Welcome to New York</h2>
+    
+    <video src="Video/newyorkcitymovie.mp4" controls="controls"></video>
+    
+    
+    <p>
+<p>
+            New York is the most populous city in the United States and the center of the New York metropolitan area, one of the most populous urban agglomerations in the world. The city is referred to as New York City or the City of New York to distinguish it from the State of New York, of which it is a part. A global power city, New York exerts a significant impact upon commerce, finance, media, art, fashion, research, technology, education, and entertainment. The home of the United Nations Headquarters, New York is an important center for international diplomacy and has been described as the cultural capital of the world.
+    
+</p>
+
+
+
+
+<p>
+            On one of the world's largest natural harbors, New York City consists of five boroughs, each of which is a county of New York State. The five boroughs—The Bronx, Brooklyn, Manhattan, Queens, and Staten Island—were consolidated into a single city in 1898. With a census-estimated 2012 population of 8,336,697 distributed over a land area of just 302.64 square miles (783.8 km2),New York is the most densely populated major city in the United States. As many as 800 languages are spoken in New York, making it the most linguistically diverse city in the world. By 2012 census estimates, the New York Metropolitan Area's population remains by a significant margin the United States' largest Metropolitan Statistical Area, with approximately 19.8 million people, and is also part of the most populous Combined Statistical Area in the United States, containing an estimated 23.4 million people.
+    
+</p>        
+        
+        
+        
+<p>
+            New York traces its roots to its 1624 founding as a trading post by colonists of the Dutch Republic and was named New Amsterdam in 1626. The city and its surroundings came under English control in 1664 New York served as the capital of the United States from 1785 until 1790. It has been the country's largest city since 1790.The Statue of Liberty greeted millions of immigrants as they came to America by ship in the late 19th and early 20th centuries and is a globally recognized symbol of the United States and its democracy.
+    
+</p>        
+        
+        
+        
+<p>
+            Many districts and landmarks in New York City have become well known to its approximately 55 million annual visitors. Several sources have ranked New York the most photographed city in the world. Times Square, iconified as "The Crossroads of the World", is the brightly illuminated hub of the Broadway theatre district, one of the world's busiest pedestrian intersections, and a major center of the world's entertainment industry. The names of many of the city's bridges, skyscrapers, and parks are known around the world. New York City's financial district, anchored by Wall Street in Lower Manhattan, has been called the world's leading financial center and is home to the New York Stock Exchange, the world's largest stock exchange by total market capitalization of its listed companies. Manhattan's real estate market is among the most expensive in the world. Manhattan's Chinatown incorporates the highest concentration of Chinese people in the Western Hemisphere. Providing continuous 24/7 service, the New York City Subway is one of the most extensive rapid transit systems worldwide. Numerous colleges and universities are in New York, including Columbia University, New York University, and Rockefeller University, which have been ranked among the top 35 in the world.
+    
+</p>    </p>
+</main>
+
+    <section id="cards">
+    <article id="bronx"><h3>Bronx</h3></article>
+    <article id="brooklyn"><h3>Brooklyn</h3></article>
+    <article id="manhattan"><h3>Manhattan</h3></article>
+    <article id="queens"><h3>Queens</h3></article>
+    <article id="statenisland"><h3>Staten Island</h3></article>
+    </section>
+    <footer>&copy; Elizabeth Garcia 2024</footer>
+</div>
+</body>
+</html>

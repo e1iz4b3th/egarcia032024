@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes From To</title>
+    <style>
+        div
+        {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin-top: 20px;
+        }
+        #one
+        {
+            background-color: aquamarine;
+            animation-name: scale;
+            animation-duration: 2s;
+            animation-iteration-count: 26;
+            animation-direction: alternate;
+        }
+        #two
+        {
+            background-color: magenta;
+            animation-name: sideswoop;
+            animation-duration: 3s;
+            animation-iteration-count: 10;
+            animation-direction: alternate;
+        }
+        #three
+        {
+            background-color: yellow;
+            animation-name: movespin;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes movespin
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        @keyframes sideswoop
+        {
+            0%{translate:0px, 0px;}
+            100%{transform: translate(500px, 0px);}
+        }
+        @keyframes scale
+        {
+            from{transform: scale(0%);}
+            to{transform: scale(100%);}
+        }
+    </style>
+</head>
+<body>
+    <h1>Keyframes From To</h1>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</body>
+</html>

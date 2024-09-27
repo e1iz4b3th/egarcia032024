@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        #wrapper
+        {
+            height: 600px;
+            max-width: 600px;
+            margin: auto;
+            background-color:  rgb(199, 167, 228);
+            border: 3px solid rgb(255, 255, 255);
+            margin-top: 70px;
+        }
+        #flexbox
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #main
+        {
+        box-sizing: border-box;
+        background-color: rgb(252, 255, 197);
+        color: rgb(226, 205, 142);
+        min-height: 300px;
+        width: 300px;
+        padding: 5rem;
+        }
+        #flexbox0
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #article01
+        {
+        background-color: rgb(191, 242, 191);
+        color: rgb(146, 188, 147);
+        box-sizing: border-box;
+        min-height: 150px;
+        width: 150px;
+        padding: 3rem;
+        }
+        #article02
+        {
+        background-color: rgb(180, 232, 180);
+        color: rgb(134, 178, 135);
+        box-sizing: border-box;
+        min-height: 150px;
+        width: 150px;
+        padding: 3rem;
+        }
+        #flexbox1
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #article03
+        {
+            background-color: rgb(164, 223, 164);
+        color: rgb(114, 154, 114);
+        box-sizing: border-box;
+        min-height: 150px;
+        width: 150px;
+        padding: 3rem;
+        }
+        #article04
+        {
+            background-color:rgb(145, 214, 145);
+        color:  rgb(94, 133, 94);
+        box-sizing: border-box;
+        min-height: 150px;
+        width: 150px;
+        padding: 3rem;
+        }
+        #flexbox002
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #nav
+        {
+            background-color: rgb(255, 201, 101);
+            color: rgb(220, 147, 58);
+            box-sizing: border-box;
+            min-height: 150px;
+            width: 150px;
+        }
+        #section01
+        {
+            background-color: rgb(163, 223, 247);
+            color: rgb(110, 172, 198);
+            min-height: 100px;
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        #section02
+        {
+            background-color: rgb(125, 209, 243);
+            color: rgb(96, 163, 189);
+            min-height: 150px;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        #footer
+        {
+            background-color: rgb(239, 161, 203);
+            color: rgb(177, 116, 148);
+            width:150px;
+            box-sizing: border-box;
+        }
+        #flexbox4
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #flexbox003
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #aside
+        {
+            background-color: rgb(199, 167, 228);
+            color: rgb(147, 119, 172);
+            box-sizing: border-box;
+            padding: 3.5rem;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <div id="flexbox">
+            <main id="main">main</main>
+            <div id="flexbox001">
+                
+                <div id="flexbox0">
+                    <article id="article01">article01</article>
+                    <article id="article02">article02</article>
+                </div>
+                
+                <div id="flexbox1">
+                    <article id="article03">article03</article>
+                    <article id="article04">article04</article>
+                </div>
+            </div>
+    </div>
+    
+        <div id="flexbox002">
+            
+            <nav id="nav">nav</nav>
+            <section id="section01">section01</section>
+            <div id="flexbox4">
+                <aside id="aside">aside</aside>
+            </div>
+        </div>
+        <div id="flexbox003">
+            <section id="section02">section02</section>
+            <footer id="footer">footer</footer>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layou002</title>
+    <style>
+        body{
+            background-color: lightpink;
+        }
+        #pageheader{
+            min-height: 150px;
+            background-color: darkmagenta;
+            padding: 1rem;
+            border: 1px solid black;
+        }
+        #topnav{
+            min-height: 75px;
+            background-color: mediumorchid;
+            padding: 1rem;
+            border: 1px solid black;
+        }
+        main{
+            flex-basis: 75%;
+            border: 1px solid black;
+            background-color: orchid;
+            padding: 1rem;
+        }
+        #aside{
+            flex-basis: 25%;
+            border: 1px solid black;
+            background-color: darkorchid;
+            padding: 1rem;
+        }
+        #q1section , #q2section , #q3section , #q4section
+            {height: 200px;
+            padding: 1rem;
+            border: 1px solid black;
+            background-color: plum ;
+        }
+        #pagefooter{
+            min-height: 100px;
+            padding: 1rem;
+            border: 1px solid black;
+            background-color: violet;
+        }
+        #side{display:flex ;
+            min-height: 250px;}
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="pageheader">#pageheader</header>
+        <div id="topnav">#topnav</div>
+
+        <div id="side">
+            <main>main</main>
+            <div id="aside">#aside</div>
+        </div>
+
+        
+        <div id="flexbox001">
+                <div id="q1section">#q1section</div>
+                <div id="q2section">#q2section</div>
+                <div id="q3section">#q3section</div>
+                <div id="q4section">#q4section</div>
+        </div>
+
+        <footer id="pagefooter">#pagefooter</footer>
+
+
+    </div>
+    <!-- End the wrapper -->
+</body>
+
+</body>
+</html>

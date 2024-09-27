@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona</title>
+    <style>
+        body
+        {
+            background-color:#35070a;
+            background-image:url(Images/barcelonaheader.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            margin-top:100px;
+        }
+
+        #wrapper
+        {
+            width: 90%;
+            max-width:1024px;
+            margin: auto;
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow:0px 0px 10px 10px rgb(255, 255, 255);
+        }
+        #pageheader
+        {
+            min-height: 150px;
+            background-color: red;
+            background-image: url(Images/Barcelonasmallheader.jpg);
+            background-size: auto;
+            position: relative;
+        }
+        #logoheader
+        {
+            background-color:none;
+            height: 248px;
+            width:255px;
+            transition: all 2s;
+            background-image:url(Images/barcelonacitylogo.webp);
+            position: absolute;
+            top:-80px;
+            left:-70px;
+        }
+        #logoheader:hover
+        {
+            transform: rotate(-10deg);
+        }
+        #media
+        {
+            background-color:#621417;
+            min-height: 500px;
+            padding:.5rem;
+        }
+        #mainnav
+        {
+            flex-basis: 25%;
+            background-color: #621417;
+            min-height: 500px;
+            padding:.5rem;
+        }
+        main
+        {
+            flex-basis: 75%;
+            background-color:rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            min-height:500px;
+            padding:.5rem;
+        }
+        footer
+        {
+            min-height:50px;
+            padding:.5rem;
+            background-color:#621417;
+            color:white;
+            text-align: center;
+        }
+        iframe
+        {
+            width:80%;
+            margin:auto;
+            display:block;
+            aspect-ratio:560 /315;
+        }
+        #flexbox001
+        {
+            display: flex;
+        }
+        #mainnav>ul
+        {
+            background-color:none;
+            list-style-type:none;
+            padding:.25rem;
+        }
+        #mainnav a
+        {
+            color: rgb(255, 255, 255);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="pageheader">
+            <div id="logoheader"></div>
+        </header>
+        <div id="media">
+            <iframe src="https://www.youtube.com/embed/0cHbqAIw4zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div id="flexbox001">
+            <nav id="mainnav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="lasargadafamila.html">La Sagrada Familia</a>
+                </li>
+                <li>
+                    <a href="parkgüell.html">Park Güell</a>
+                </li>
+                <li>
+                    <a href="casabatlló.html">Casa Batlló</a>
+                </li>
+
+            </ul>
+            </nav>
+
+            <main>
+
+                <h1>Park Güell</h1>
+
+            </main>
+        </div>
+
+        <footer>
+            &copy; Garcia 2023
+
+        </footer>
+
+    </div>
+</body>
+</html>

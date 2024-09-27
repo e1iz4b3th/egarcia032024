@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body
+        {
+            background-color: #000000;
+        }
+        #container
+        {
+        width:80%;
+        max-width:600px;
+        margin: auto;
+        height: 600px;
+        margin-top: 70px;
+        border: 3px solid #ffffff;
+        }
+        #wrapper
+        {
+        height: 80%;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+        "main main article01 article02"
+        "main main article03 article04"
+        "nav section01 section01 aside"
+        "section02 section02 footer aside"
+        ;
+        }
+        #main
+        {
+        box-sizing: border-box;
+        background-color: rgb(252, 255, 197);
+        color: rgb(226, 205, 142);
+        min-height: 300px;
+        width: 300px;
+        padding: 5rem;
+        grid-area: main;
+        }
+        #article01
+        {
+        background-color: rgb(191, 242, 191);
+        color: rgb(146, 188, 147);
+        box-sizing: border-box;
+        min-height: 50px;
+        width: 150px;
+        padding: 3rem;
+        grid-area: article01;
+        }
+        #article02
+        {
+        background-color: rgb(180, 232, 180);
+        color: rgb(134, 178, 135);
+        box-sizing: border-box;
+        min-height: 50px;
+        width: 150px;
+        padding: 3rem;
+        grid-area: article02;
+        }
+        #article03
+        {
+        background-color: rgb(164, 223, 164);
+        color: rgb(114, 154, 114);
+        box-sizing: border-box;
+        min-height: 50px;
+        width: 150px;
+        padding: 3rem;
+        grid-area: article03;
+        }
+        #article04
+        {
+        background-color:rgb(145, 214, 145);
+        color:  rgb(94, 133, 94);
+        box-sizing: border-box;
+        min-height: 50px;
+        width: 150px;
+        padding: 3rem;
+        grid-area: article04;
+        }
+        #nav
+        {
+            background-color: rgb(255, 201, 101);
+            color: rgb(220, 147, 58);
+            box-sizing: border-box;
+            min-height: 150px;
+            width: 150px;
+            grid-area: nav;
+        }
+        #section01
+        {
+            background-color: rgb(163, 223, 247);
+            color: rgb(110, 172, 198);
+            grid-area: section01;
+            min-height: 100px;
+            
+
+        }
+        #section02
+        {
+            background-color: rgb(125, 209, 243);
+            color: rgb(96, 163, 189);
+            grid-area: section02;
+            min-height: 150px;
+            width: 300px;
+        }
+        #aside
+        {
+            background-color: rgb(199, 167, 228);
+            color: rgb(147, 119, 172);
+            grid-area: aside;
+            padding: 3.5rem;
+        }
+        #footer
+        {
+            background-color: rgb(239, 161, 203);
+            color: rgb(177, 116, 148);
+            grid-area: footer;
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <main id="main">Main</main>
+            <article id="article01">Article01</article>
+            <article id="article02">Article02</article>
+            <article id="article03">Article03</article>
+            <article id="article04">Article04</article>
+            <nav id="nav">Nav</nav>
+            <section id="section01">Section01</section>
+            <section id="section02">Section02</section>
+            <aside id="aside">aside</aside>
+            <footer id="footer">Footer</footer>
+        </div>
+    </div>
+</body>
+</html>

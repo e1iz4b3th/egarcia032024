@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation002</title>
+    <style>
+        body
+        {
+            background-color: rgb(69, 71, 78);
+            background-image: url(Images/spaceandearth.png);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        h1
+        {
+            text-align: center;
+            color: white;
+        }
+        div#mover
+        {
+            height:200px;
+            width:200px;
+            border: 1px soild white;
+            position:relative;
+            top:400px;
+            left:0px;
+            background-image: url(Images/sputnik.png);
+            background-size: 50%;
+            background-position: 20% 40%;
+            background-repeat: no-repeat;
+            animation-name:mover;
+            animation-duration:4s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes mover
+        {
+            0%
+            {
+                top:400px; 
+                left: -200px;
+            
+            }
+            50%
+            {
+                top:0px;
+                left:calc(50% - 100px);
+            }
+
+            100%
+            {
+                top:400px;
+                left:calc(100% + 200px);
+            
+            }
+
+        }
+
+        div#rectangle 
+        {
+            width:193px;
+            height:350px;
+            background-color:rgb(74, 107, 74);
+            border-radius: 22%;
+            transform:scale(.5);
+            margin: auto;
+
+            animation-name: pulse;
+            animation-duration: .7s;
+            animation-iteration-count:infinite;
+        }
+
+        @keyframes pulse
+        {
+            from
+            {
+                transform:scale(0);
+                opacity: .5;
+            }
+            to{
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+        div#Mk
+        {
+            height:200px;
+            width:200px;
+            border: 1px soild white;
+            position:relative;
+            top:400px;
+            left:0px;
+            background-image: url(satellites/satellite1.png);
+            background-size: 50%;
+            background-position: 20% 40%;
+            background-repeat: no-repeat;
+            animation-name:Mk;
+            animation-duration:5s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes Mk
+        {
+            0%
+            {
+                top:400px; 
+                left: -200px;
+            
+            }
+            50%
+            {
+                top:0px;
+                left:calc(50% - 100px);
+            }
+
+            100%
+            {
+                top:400px;
+                left:calc(100% + 200px);
+            
+            }
+
+        }
+
+        div#JJ
+        {
+            width:193px;
+            height:350px;
+            background-color:rgb(8, 139, 254);
+            border-radius: 22%;
+            transform:scale(.5);
+            margin: auto;
+
+            animation-name: JJ;
+            animation-duration: .7s;
+            animation-iteration-count:infinite;
+        }
+
+        @keyframes JJ
+        {
+            from
+            {
+                transform:scale(0);
+                opacity: .5;
+            }
+            to{
+                transform: scale(0);
+                opacity: 0;
+            }
+        } 
+        
+
+
+        div#RG
+        {
+            height:300px;
+            width:300px;
+            border: 1px soild white;
+            position:relative;
+            top:300px;
+            left:0px;
+            background-image: url(satellites/satellite2.png);
+            background-size: 50%;
+            background-position: 20% 40%;
+            background-repeat: no-repeat;
+            animation-name:RG;
+            animation-duration:3.5s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes RG
+        {
+            0%
+            {
+                top:400px; 
+                left: -200px;
+            
+            }
+            50%
+            {
+                top:0px;
+                left:calc(50% - 100px);
+            }
+
+            100%
+            {
+                top:400px;
+                left:calc(100% + 200px);
+            
+            }
+
+        }
+
+        div#Rj
+        {
+            width:193px;
+            height:350px;
+            background-color:rgb(8, 139, 254);
+            border-radius: 22%;
+            transform:scale(.5);
+            margin: auto;
+
+            animation-name: Rj;
+            animation-duration: .7s;
+            animation-iteration-count:infinite;
+        }
+
+        @keyframes Rj
+        {
+            from
+            {
+                transform:scale(0);
+                opacity: .5;
+            }
+            to{
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>sputnik</h1>
+
+    <div id="mover">
+        <div id="rectangle"></div>
+    </div>
+    <div id="Mk">
+        <div id="JJ"></div>
+    </div>
+    <div id="RG">
+        <div id="Rj"></div>
+    </div>
+
+
+</body>
+</html>

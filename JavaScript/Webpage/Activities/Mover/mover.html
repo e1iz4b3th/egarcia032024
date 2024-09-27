@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mover</title>
+    <style>
+        body
+        {
+            background-color: powderblue;
+        }
+        h1
+        {
+            text-align: center;
+            background-color: antiquewhite;
+    padding: 1rem;
+        }
+        #mover
+        {
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mover</h1>
+    <div id="mover"></div>
+
+    <script>
+        // Create variable
+        let mover;
+        mover = window.document.querySelector('#mover');
+
+        let speed; 
+        speed = 30;
+
+        // Move mover to a different using CSS with JavaScript
+        mover.style.position = "absolute";
+        mover.style.top ="300px";
+        mover.style.left = "100px";
+
+        // Listen to user events (click, keydown, mousemove)
+        window.addEventListener('keydown' , move);
+
+        function move()
+        {
+            //mover.style.backgroundColor = "purple"  
+            
+            if(event.keyCode == 37)
+            {
+                //Left
+                mover.style.backgroundColor = "blue";
+                mover.style.left = parseInt(mover.style.left) - speed + "px";
+            }
+
+            if(event.keyCode == 40)
+            {
+                //Dowm
+                mover.style.backgroundColor = "green";
+                mover.style.top = parseInt(mover.style.top) + speed + "px";
+            }
+
+            if(event.keyCode == 39)
+            {
+                //Right
+                mover.style.backgroundColor = "yellow";
+                mover.style.left = parseInt(mover.style.left) + speed + "px";
+            }
+
+            if(event.keyCode == 38)
+            {
+                //up
+                mover.style.backgroundColor = "red";
+                mover.style.top = parseInt(mover.style.top) - speed + "px";
+            }
+
+
+
+        }
+
+    </script>
+</body>
+</html>

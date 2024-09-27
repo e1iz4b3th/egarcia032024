@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHS</title>
+    <style>
+    body{
+        background-color: #000000;
+    }
+    #wrapper{
+        display: grid;
+        grid-template-areas:
+        "ph ph ph ph ph"
+        "pl pl pl pl pl"
+        "sd sd sd sd sd"
+        ". pa st bo ."
+        "ms ms ms ms ms"
+        "en en en en en"
+        ". nw ca tw ."
+        "so so so so so"
+        "co co co co co";
+        margin: auto;
+        max-height: 90%;
+        max-width: 680px;
+        background-color: #ffffff;
+        column-gap: 30px;
+        border: 3px solid rgb(120, 120, 120);
+    }
+    #pageheader{
+        height: 150px;
+        background-color: #d3e2e0;
+        color:  #6e9f99;
+        grid-area: ph;
+    }
+    #pagelinks{
+        height: 60px;
+        background-color: #d5baba;
+        color: #b57272;
+        grid-area: pl;
+    }
+    #slideshow{
+        height: 300px;
+        background-color: #b5c0d3;
+        color: #6f88b3;
+        grid-area: sd;
+    }
+    #parents{
+        height: 100px;
+        background-color: rgb(220, 199, 172);
+        color: rgb(164, 125, 75);
+        grid-area: pa;
+    }
+    #students{
+        height: 100px;
+        background-color: rgb(204, 198, 170);
+        color: rgb(156, 138, 69);
+        grid-area: st;
+    }
+    #board{
+        height: 100px;
+        background-color: #e3e6e6;
+        color: #a2a2a2;
+        grid-area: bo;
+    }
+    #mission{
+        height: 150px;
+        background-color:#bab2c6;
+        color: #826da0;
+        grid-area: ms;
+    }
+    #engage{
+        height: 150px;
+        background-color:#cbb3b6;
+        color: #8b585f;
+        grid-area: en;
+    }
+    #news{
+        height: 100px;
+        background-color:#bfd6c4;
+        color: #5a9767;
+        grid-area: nw;
+    }
+    #calendar{
+        height: 100px;
+        background-color:rgb(156, 156, 156);
+        color: rgb(83, 83, 83);
+        grid-area: ca;
+    }
+    #twitter{
+        height: 100px;
+        background-color:rgb(157, 176, 159);
+        color: rgb(82, 113, 86);
+        grid-area: tw;
+    }
+    #socialmedia{
+        height: 150px;
+        background-color:#ebe4d2;
+        color: #a99a75;
+        grid-area: so;
+    }
+    #contact{
+        height: 200px;
+        background-color:#b0daf4;
+        color: #5c92b3;
+        grid-area: co;
+    }
+</style>
+</head>
+<body>
+
+
+<div id="wrapper">
+        <div id="pageheader">#pageheader</div>
+        <div id="pagelinks">#pagelinks</div>
+        <div id="slideshow">#slideshow</div>
+        <div id="parents">#parents</div>
+        <div id="students">#students</div>
+        <div id="board">#board</div>
+        <div id="mission">#mission</div>
+        <div id="engage">#engage</div>
+        <div id="news">#news</div>
+        <div id="calendar">#calendar</div>
+        <div id="twitter">#twitter</div>
+        <div id="socialmedia">#socialmedia</div>
+        <div id="contact">#contact</div>
+</div>
+</body>
+</html>

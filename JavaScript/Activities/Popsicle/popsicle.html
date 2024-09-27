@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popsicle</title>
+    <style>
+        body
+        {
+            background-color: pink;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        #container
+        {
+            min-height: 500px;
+            min-width: 400px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: mistyrose;
+            border: 6px solid rgb(200, 84, 84);
+            width: 50%;
+            margin: auto;
+        }
+        #head
+        {
+            background-color: red;
+            width: 200px;
+            height: 320px;
+            border-radius: 80px 80px 10px 10px;
+            position:relative;
+            margin-top: -5%;
+            box-shadow: rgb(255, 173, 173) -8px 8px 8px 2px;
+            
+        }
+        #stick
+        {
+            background-color: rgb(253, 206, 175);
+            width: 40px;
+            height: 50px;
+            border-radius: 0px 0px 30px 30px;
+            position:absolute;
+            top: 320px;
+            right: 80px;
+            box-shadow: rgb(255, 185, 185) -8px 8px 8px 2px;
+        }
+        #smile
+        {
+            background-color: darkred;
+            width: 65px;
+            height: 50px;
+            position:absolute;
+            border-radius: 0px 0px 15px 15px;
+            top: 250px;
+            right: 70px;
+        }
+        #tongue
+        {
+            background-color: rgb(252, 131, 149);
+            width: 40px;
+            height: 40px;
+            border-radius: 5px 5px 15px 15px;
+            position: absolute;
+            top: 270px;
+            right: 83px;
+            
+        }
+        #tongue:hover
+        {
+            scale: 130%;
+        }
+        #lefteye, #righteye
+        {
+            height: 30px;
+            width: 30px;
+            background-color: darkred;
+            border-radius: 50%;
+        }
+        #lefteye
+        {
+            position:absolute;
+            top:250px;
+            left: 150px;
+        }
+        #righteye
+        {
+            position:absolute;
+            top:250px;
+            right: 150px;
+        }
+        #lefteyereflection
+        {
+            background-color: rgb(255, 229, 229);
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            position: absolute;
+            top:255px;
+            left: 33px;
+            box-shadow: rgb(255, 229, 229) -5px 5px 6px 1px;
+        }
+        #righteyerefection
+        {
+            background-color: rgb(255, 229, 229);
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            position: absolute;
+            top: 255px;
+            right: 25px;
+            box-shadow: rgb(255, 229, 229) -5px 5px 6px 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Popsicle</h1>
+    <h2>Elizabeth Garcia</h2>
+    <div id="container">
+        <div id="head">
+            <div id="stick"></div>
+        <div id="smile"></div>
+        <div id="tongue"></div>
+        <div id="lefteye"></div>
+        <div id="righteye"></div>
+        <div id="lefteyereflection"></div>
+        <div id="righteyerefection"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

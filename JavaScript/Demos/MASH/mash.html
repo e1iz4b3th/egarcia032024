@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASH</title>
+</head>
+<body>
+    <h1>MASH</h1>
+    <script>
+        // Creature MASH variable
+        // Mansion Apartment Shack House
+        // Arra variables hold multiple values
+        let mash = [];
+
+        alert(mash);
+        //create four categories
+        //Pick as many array items as categories
+        let love = ["Noah", "Brick", "Shawn", "Alexis"];
+        let shelter = ["Mansion", "Apartment", "Homeless", "House"];
+        let children = ["10 kids", "7 kids", "3 Kids", "1 kid"];
+        let vehicle = ["Porsche 911", "Plane", "Toyoya mini Van", "Tesla Y"];
+
+        //create random number variable
+        let randomPick;
+
+
+        // Display Data
+        alert(love[randomPickGenerator()]);
+        alert(shelter[randomPickGenerator()]);
+        alert(children[randomPickGenerator()]);
+        alert(vehicle[randomPickGenerator()]);
+
+            function randomPickGenerator()
+            {
+                // create a random number
+                randomPick = Math.floor(Math.random() * 4);
+                return randomPick;
+            }
+    </script>
+</body>
+</html>

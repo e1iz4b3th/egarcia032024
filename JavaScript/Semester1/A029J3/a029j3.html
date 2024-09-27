@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positioning - Relative</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        h2
+        {
+            text-align: center;
+        }
+        #container
+        {
+            background-image: url(Images/grassbg.jpg);
+            background-size: cover;
+            height: 700px;
+            width: 1500px;
+            margin: auto;
+            border: 5px solid black;
+            position: relative;
+        }
+        #Skye
+        {
+            background-image: url(Images/skyeflying.png);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top:50px;
+            right: 1200px;
+        }
+        #Zuma
+        {
+            background-image: url(Images/ZumaFix.png);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 480px;
+            right: 700px;
+        }
+        #Rocky
+        {
+            background-image: url(Images/RockyFix.png);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 500px;
+            right: 500px;
+        }
+        #Rubble
+        {
+            background-image: url(Images/Rubblefix.png);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 500px;
+            right: 1210px;
+        }
+    </style>
+</head>
+<body>
+    <h1>A029J3</h1>
+
+    <h2>Position Relative</h2>
+
+    <div id="container">
+        <div id="Skye"></div>
+        <div id="Zuma"></div>
+        <div id="Rocky"></div>
+        <div id="Rubble"></div>
+    </div>
+</body>
+</html>

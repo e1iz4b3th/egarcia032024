@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            background-color: rgb(215, 210, 250);
+            animation-name: backgroundshift;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes backgroundshift
+        {
+            from{background-color:rgb(171, 153, 183);}
+            to{background-color: rgb(131, 110, 139);}
+
+        }
+        .chakra-petch-regular{
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }   
+        h1
+        {
+            text-align: center;
+            background-color: rgb(220, 186, 210);
+            color: rgb(160, 110, 134);
+            padding: 1rem;
+            border: 4px solid rgb(255, 252, 206);
+        }
+        #outercircle
+        {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 3px 3px 10px 10px rgb(255, 254, 241);
+            cursor: pointer;
+            transition: 2s;
+        }
+        #outercircle:hover
+        {
+            box-shadow:4px 4px 35px 10px rgb(255, 251, 234);
+        }
+        .shake
+        {
+            animation-name: shake;
+            animation-duration:0.15s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+        #innercircle
+        {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(214, 174, 204);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        #eight
+        {
+            text-align: center;
+            font-size: 8rem;
+            color: rgb(124, 94, 123);
+        }
+        @keyframes shake {
+            from {
+                margin-top: 0px;
+            }
+            to {
+                margin-top: 100px;
+            }
+        }
+        #messagedisplay
+        {
+            background-color: none;
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            background-image: url(Images/Untitled-2.png);
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            color: white;
+            opacity: 0;
+            transition: all 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #messagedisplay p 
+        {
+            background-color:none;
+            width: 75px;
+            text-align: center;
+            padding-top: 3rem;
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Magic 8 Ball</h1>
+
+    <div id="outercircle">
+        <div id="innercircle">
+                <h2 id="eight" class="chakra-petch-regular">8</h2>
+        </div>
+        <div id="messagedisplay"></div>
+    </div>
+
+    <script>
+        // Create a variable for the magic8ball #outercircle
+        const ball = window.document.querySelector("#outercircle");
+        
+        // Create a variable for the magic8ball #outercircle
+        let innerCircle;
+        let eight;
+        let messagedisplay;
+
+        // Assign elements to variables
+        innerCircle = window.document.querySelector("#innercircle");
+        eight = window.document.querySelector("#eight");
+        messageDisplay = window.document.querySelector("#messagedisplay");
+
+        // Add an event listener to the ball
+        ball.addEventListener('click', shakeBall);
+        
+        // The function
+        function shakeBall()
+        {
+
+            //window.alert("working!");
+            ball.classList.add("shake");
+
+            messageDisplay.style.opacity="0";
+
+            eight.style.display = "none"
+            innerCircle.style.backgroundColor = "#333"
+            innerCircle.style.border = "4px double silver"
+        
+        // Set timer to remove shake class from ball
+        window.setTimeout(function()
+        {
+        ball.classList.remove('shake');
+        }, 1000);
+        
+        // Display the message
+        window.setTimeout(updateMessage, 2500);
+        }
+        function updateMessage(){
+            messageDisplay.style.opacity="1";
+
+            //Create messages to display
+            let messageText = [];
+            messageText[0] = "<p>It is certain</p>"
+            messageText[1] = "<p>It is decidedly so</p>"
+            messageText[2] = "<p>Without a doubt</p>"
+            messageText[3] = "<p>Yes definitely</p>"
+            messageText[4] = "<p>You may rely on it</p>"
+            messageText[5] = "<p>As I see it, yes</p>"
+            messageText[6] = "<p>Most likely</p>"
+            messageText[7] = "<p>Reply hazy, try again</p>"
+            messageText[8] = "<p>Dont count on it</p>"
+            messageText[9] = "<p>Better not tell you now</p>"
+            messageText[10] = "<p>Cannot predict now</p>"
+            messageText[11] = "<p>My reply is no</p>"
+            messageText[12] = "<p>My sources say no</p>"
+            messageText[13] = "<p>Outlook not so good</p>"
+            messageText[14] = "<p>Very doubtful</p>"
+            messageText[15] = "<p>Ask again later</p>"
+
+
+            //window.alert(messageText.length);
+
+            //Generate random number for a random message
+            let randomNum;
+            randomNum = Math.floor(Math.random() * messageText.length );
+
+            //window.alert(messageText[randomNum]);
+
+            //Display a random message
+            messageDisplay.innerHTML = messageText[randomNum];
+
+        }
+    
+
+
+
+
+    
+    </script>
+    
+</body>
+</html>
