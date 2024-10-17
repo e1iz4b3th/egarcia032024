@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley Face</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Smiley Face</h1>
+    <canvas id="canvas"></canvas>
+
+    <script>
+
+        const canvas = window.document.querySelector('#canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Configure canvas
+        canvas.width = 900;
+        canvas.height = 600;
+        // Styles
+        canvas.style.border = '2px solid black';
+        canvas.style.margin = 'auto';
+        canvas.style.display = 'block';
+        canvas.style.backgroundColor = "black";
+
+        // Draw circle
+        ctx.strokeStyle = 'blue';
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(450, 300, 290, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.closePath();
+
+        // Draw half circle
+        ctx.strokeStyle = 'blue';
+        ctx.lineWidth = 15;
+        ctx.beginPath();
+        ctx.arc(450, 370, 160, 0, 3.14);
+        ctx.closePath();
+        ctx.stroke();
+
+        // Draw circle
+        ctx.strokeStyle = 'blue';
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(450, 300, 100, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.closePath();
+
+    </script>
+</body>
+</html>
