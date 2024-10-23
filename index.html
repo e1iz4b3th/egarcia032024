@@ -31,13 +31,13 @@
         #pageheader
         {
             min-height: 200px;
-            background-color:#0000ff;
+            background-color:#000014;
             padding: 1rem;
 
         }
         #pageheader .container
         {
-            background-image: url(Images/ls2mediumlaying.png);
+            background-image: url(Images/american2.avif);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -57,9 +57,10 @@
         }
         #pagenav
         {
+            color: white;
             background-color:none;
             min-height: 30px;
-            width: 300px;
+            width: 400px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -68,7 +69,7 @@
             left: calc(50% - 150px);
         }
         #pagenav a{
-            color: black;
+            color: rgb(255, 255, 255);
             text-decoration: none;
             text-transform: uppercase;
         }
@@ -79,23 +80,49 @@
         #media
         {
             min-height: 300px;
-            background-color: rgb(47, 64, 146);
             padding: 1rem;
+            background-image: url(Images/loganbed.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: center;
         }
         #media h1
         {
             text-align: center;
             font-size: 3rem;
+            color: rgba(166, 24, 24, 0.814);
+            text-shadow: rgb(0, 0, 0) -2px 2px;
         }
         #media h2
         {
             text-align: center;
             font-size: 2rem;
+            color: rgba(0, 213, 255, 0.778);
+            text-shadow: rgb(0, 0, 0) -2px 2px;
+
         }
         #media blockquote
         {
+            color:white;
+            text-shadow: rgb(0, 0, 0) -2px 2px;
+        }
+        #quote
+        {
+            color: rgb(255, 255, 255);
+            text-shadow: rgb(0, 0, 0) -2px 2px;
+        }
+        #intro
+        {
+
+            color: rgb(0, 0, 0);
         }
         #pagecontent
+        {
+            min-height: 200px;
+            background-color: rgb(47, 64, 146);
+            padding: 1rem;
+        }
+        #keyassignments
         {
             min-height: 200px;
             background-color: rgb(47, 64, 146);
@@ -136,6 +163,10 @@
             background-color: rgb(137, 38, 38);
             padding: 1rem;
         }
+        .footerlinks
+        {
+            display: none;
+        }
         #top
         {
             background-image: url(Images/loganbacktotopwoword.png);
@@ -163,7 +194,17 @@
         }
         @media only screen and (min-width: 768px)
         {
-
+            #flexsubfooter
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+            .footerlinks
+            {
+                display: block;
+                min-width: 240px;
+                
+            }
             #logo
         {
             left: 5%;
@@ -180,20 +221,12 @@
         }
         @media only screen and (min-width: 1024px)
         {
-            
         }
         @media only screen and (min-width: 1200px)
         {
             #media
             {height: 600px;}
-            #pageheader .container
-            {
-                background-color: #0000ff;
-            background-image: url(Images/me.webp);
-                background-size: cover;
-                background-position-y: -350px;
- 
-            }
+
         }
         
     </style>
@@ -217,8 +250,10 @@
             </a>
                 | 
             <a href="#Semester1">Semester 1 </a>
-                | 
-            <a href="#Semester2">Semester 2</a>
+                <!-- | 
+            <a href="#Semester2">Semester 2</a> -->
+            |
+            <a href="#keyassignments">Key Assignments</a>
             </nav>
         </div>
     </header>
@@ -228,7 +263,7 @@
     <section id="media">
         <h1>Elizabeth Garcia</h1>
         <h2>Portfolio</h2>
-        <blockquote>Hard work always creates opportunities. And even when things are bad, just keep with it and be resilient.</blockquote>
+        <blockquote>I really don't care what people think.</blockquote>
         <p id="quote">
             - Logan Sargeant
         </p>
@@ -239,12 +274,13 @@
     <!-- begin pagecontent -->
     <main id="pagecontent">
 
-        <div class="container">
-            <h1>Introduction</h1>
-            <p>Welcome to my Portfolio! My name is Elizabeth Garcia and this is my thrid year taking a webpage class. I really enojy it but I also enjoy other things like motosports, art, and watching total drama. My webpage this year is based on one of my favorite driver Logan Sargeant, I decided to make this a day before he got replace and I'm coping, somehow. This is mainly now going to be in memory of him when he was in Williams, two years of F1 and one year of F2 with the team. I really enojy watching F1 with Lisandra and talking about it to her, It's one of the main things I do on my free time and I am glad that I got her into the sport.
-        </p>
-
-        </div>
+<div id="intro">
+            <div class="container">
+                <h1>Introduction</h1>
+                <p>Welcome to my Portfolio! My name is Elizabeth Garcia and this is my thrid year taking a webpage class. I really enojy it but I also enjoy other things like motosports, art, and watching total drama. My webpage this year is based on one of my favorite driver Logan Sargeant, I decided to make this a day before he got replace and I'm coping, somehow. This is mainly now going to be in memory of him when he was in Williams, two years of F1 and one year of F2 with the team. I really enojy watching F1 with Lisandra and talking about it to her, It's one of the main things I do on my free time and I am glad that I got her into the sport.
+            </p>
+            </div>
+</div>
         
     </main>
     <!-- end pagecontent -->
@@ -313,10 +349,47 @@
     </footer>
     <!-- end pagefooter -->
     
+<!-- Begin keyassignments -->
+
+<div id="keyassignments">
+    <div class="container">
+        <h1>Key Assignments</h1>
+    
+        <p> 
+            skibidi
+        </p>
+    
+    </div>
+</div>
+<!-- end keyassignments -->
+    
     <!-- begin subfooter -->
     <footer id="subfooter">
         <div class="container">
-            subfooter
+            
+            
+<div id="flexsubfooter">
+                <div class="quote">
+                    <h3>Final Thoughts</h3>
+                    <blockquote>
+                        Nothing can really prepare you for when you get in the Formula One car. Knowing that you're driving a multimillion-dollar car, and if you crash it it's going to cost a lot of money, and they might not give you another chance, is scary.
+    
+                    </blockquote>
+                    <p>Lewis Hamilton</p>
+                </div>
+                
+                
+                <div class="footerlinks">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Career</li>
+                        <li>Semester1</li>
+                        <!-- <li>Semester2</li> -->
+                        <li>Key Assignments</li>
+                    </ul>
+                </div>
+</div>
+
         </div>
     </footer>
     <!-- end subfooter -->

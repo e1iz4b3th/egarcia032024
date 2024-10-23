@@ -110,7 +110,16 @@
         const btnCreateArc = window.document.querySelector('#createarc');
         btnCreateArc.style.backgroundColor = 'lightpink';
         btnCreateArc.addEventListener('click', function(){
-            window.alert('Create Arc')});
+            //window.alert('Create Arc')
+            ctx.strokeStyle = 'blue';
+            ctx.lineWidth = 5;
+            ctx.beginPath();
+            ctx.arc(200, 200, 100, 0, Math.PI * 2);
+            ctx.stroke();
+
+            
+        });
+            
 
         const btnCreateStar = window.document.querySelector('#createstar');
         btnCreateStar.style.backgroundColor = 'lightpink';
@@ -128,8 +137,9 @@
             ctx.lineTo(125, 60);
             ctx.lineTo(170, 100);
             ctx.lineTo(145, 138);
-            ctx.lineTo(200, 115);
-            ctx.lineTo(245, 138);
+            ctx.lineTo(200, 120);
+            ctx.lineTo(245, 140);
+            ctx.lineTo(200, 30);
             ctx.stroke();
 
         
