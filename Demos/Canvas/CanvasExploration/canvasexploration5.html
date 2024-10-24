@@ -98,10 +98,17 @@
         btnCreateStar.style.backgroundColor = 'lightpink';
         btnCreateStar.addEventListener('click', function(){window.alert('Create Star')});
 
-        const btnUndoDraw = window.document.querySelector('#undodraw');
-        btnUndoDraw.style.backgroundColor = 'lightpink';
-        btnUndoDraw.addEventListener('click', function(){window.alert('Und Draw')});
+        // const btnUndoDraw = window.document.querySelector('#undodraw');
+        // btnUndoDraw.style.backgroundColor = 'lightpink';
+        // btnUndoDraw.addEventListener('click', function(){window.alert('Und Draw')});
 
+        const btnClear = window.document.querySelector('#clear');
+        btnClear.style.backgroundColor = 'lightpink';
+        btnClear.addEventListener('click', function(){
+            window.alert('Clear');
+
+            ctx.clearRect(0,0, canvas.width, canvas.height);
+        });
         
     </script>
 </body>
