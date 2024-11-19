@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        }
+    body {
+        margin-top: 50px;
+        background-color: rgb(30, 106, 59);
+    }
+    h1 {
+        text-align: center;
+    }
+    #canvas {
+        background-color: rgb(178, 110, 7);
+        margin: auto;
+        display: block;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    </style>
+</head>
+<body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas" width="1000px" height="500px"></canvas>
+
+    <script>
+      // Create variables
+    const canvas = window.document.querySelector('#canvas');
+    const ctx = canvas.getContext('2d');
+
+
+        //legs
+        ctx.beginPath();
+    ctx.lineWidth = 4;
+    ctx.moveTo(400, 90);
+    ctx.lineTo(350, 70);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 4;
+    ctx.moveTo(600, 200);
+    ctx.lineTo(350, 100);
+    ctx.stroke();
+
+    // Ladybug body
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = "darkred"
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(500, 200, 150, 0, Math.PI * 2);
+    ctx.fill();  
+    ctx.stroke();
+
+    //head
+    ctx.beginPath();
+        ctx.fillStyle = "black"
+    ctx.arc(500, 335, 65, 0, 3.14, false);
+    ctx.stroke();
+    ctx.fill();  
+
+    //line
+    ctx.beginPath();
+    ctx.moveTo(500, 50);
+    ctx.lineTo(500, 350);
+    ctx.stroke();
+
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'black'
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(500, 200, 40, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(405, 255, 40, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(595, 255, 40, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(595, 150, 40, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.arc(405, 149, 40, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+
+
+
+
+    
+    </script>
+</body>
+</html>

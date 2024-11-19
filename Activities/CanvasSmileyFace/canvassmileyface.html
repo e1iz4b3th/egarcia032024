@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smiley Face</title>
     <style>
+        body
+        {
+            background-color: black;
+        }
         h1{
+            color: azure;
             text-align: center;
         }
     </style>
@@ -30,28 +35,47 @@
         canvas.style.backgroundColor = "black";
 
         // Draw circle
-        ctx.strokeStyle = 'blue';
+        ctx.strokeStyle = 'yellow';
+        ctx.fillStyle = 'yellow'
         ctx.lineWidth = 4;
         ctx.beginPath();
         ctx.arc(450, 300, 290, 0, Math.PI * 2);
+        ctx.fill();
         ctx.stroke();
         ctx.closePath();
+        
 
         // Draw half circle
-        ctx.strokeStyle = 'blue';
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'white'
         ctx.lineWidth = 15;
         ctx.beginPath();
         ctx.arc(450, 370, 160, 0, 3.14);
+        ctx.fill();
         ctx.closePath();
         ctx.stroke();
 
         // Draw circle
-        ctx.strokeStyle = 'blue';
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'black'
         ctx.lineWidth = 4;
         ctx.beginPath();
-        ctx.arc(450, 300, 100, 0, Math.PI * 2);
+        ctx.arc(320, 220, 40, 0, Math.PI * 2);
+        ctx.fill();
         ctx.stroke();
         ctx.closePath();
+
+        // Draw circle
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'black'
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(570, 220, 40, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+
 
     </script>
 </body>

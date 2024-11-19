@@ -16,7 +16,7 @@
         {
             background-size:cover;
             background-repeat: no-repeat;
-            
+            font-family: ;
         }
         .container
         {
@@ -69,13 +69,15 @@
             left: calc(50% - 200px);
         }
         #pagenav a{
-            color: rgb(255, 255, 255);
-            text-decoration: none;
+            color:rgba(255, 255, 255, 0.83);
             text-transform: uppercase;
+            font-family: fantasy;
+            background-color: #00295e92;
+            font-weight: 900;
         }
         #pagenav a:hover
         {
-            color: aqua;
+            color: rgb(9, 173, 255);
         }
         #media
         {
@@ -92,6 +94,7 @@
             font-size: 3rem;
             color: rgba(166, 24, 24, 0.814);
             text-shadow: rgb(0, 0, 0) -2px 2px;
+            font-family: ;
         }
         #media h2
         {
@@ -101,52 +104,100 @@
             text-shadow: rgb(0, 0, 0) -2px 2px;
 
         }
+
         #media blockquote
         {
-            color:white;
+            color:rgba(255, 255, 255, 0.849);
             text-shadow: rgb(0, 0, 0) -2px 2px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
         }
         #quote
         {
-            color: rgb(255, 255, 255);
+            color: rgba(255, 255, 255, 0.871);
             text-shadow: rgb(0, 0, 0) -2px 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+        #free
+        {
+            color: #ffffff;
+            font-size: large;
+            font-weight: bold;
+            text-align: end;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+            
+        }
+        #free a
+        {
+            color: rgba(0, 255, 255, 0.835);
+        }
+        #click
+        {
+            color: #ffffff99;
+            text-align: end;
+            text-shadow: rgb(0, 0, 0) -2px 2px;
+            font-size: small;
+        } 
         #intro
         {
-
-            color: rgb(0, 0, 0);
-
+            color: rgb(0, 149, 194);
+        }
+        #intro a
+        {
+            color:  rgb(14, 199, 255);
+            text-decoration: none;
         }
         #pagecontent
         {
             min-height: 200px;
-            background-color: rgb(47, 64, 146);
+            background-color: rgb(0, 0, 0);
             padding: 1rem;
 
         }
         #pagecontent .container
         {
-            background-image: url(Images/lovels2.jpg);
+            background-color: rgb(30, 40, 57);
             background-position: center;
             background-size: cover;
         }
         #keyassignments
         {
             min-height: 200px;
-            background-color: rgb(47, 64, 146);
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
             padding: 1rem;
+        }
+        #keyassignments .container
+        {
+            background-image: url(Images/GLITER.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         #Career
         {
             min-height: 200px;
-            background-color: gainsboro;
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
             padding: 1rem;
+        }
+        #Career .container
+        {
+            background-image: url(Images/red.jpg);
+            background-position-y: -10px;
         }
         #Semester1
         {
             min-height: 200px;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
             padding: 1rem;
+        }
+        #Semester1 .container
+        {
+            background-image: url(Images/lovels2.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         #Semester2
         {
@@ -158,18 +209,35 @@
         #pagefooter
         {
             background-color: black;
+            color: rgb(0, 149, 194);
             padding: 1rem;
             text-align: center;
         }
         #pagefooter .container
         {
             min-height: 2rem;
+            background-color: #000000;
+        }
+        #pagefooter a
+        {
+            color: rgb(0, 149, 194);
         }
         #subfooter
         {
             min-height: 200px;
-            background-color: rgb(137, 38, 38);
+            background-color: rgb(0, 0, 0);
             padding: 1rem;
+            
+        }
+        #subfooter .container
+        {
+            background-image: url(Images/americalivery.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px;
+            color: #ffffffdf;
+            
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
         }
         .footerlinks
         {
@@ -178,7 +246,7 @@
         #top
         {
             background-image: url(Images/loganbacktotopwoword.png);
-            background-size: cover;
+            background-size: contain;
             width: 100px;
             height: 100px;
             padding: 1rem;
@@ -229,11 +297,22 @@
         }
         @media only screen and (min-width: 1024px)
         {
+            #media
+        {
+            min-height: 300px;
+            padding: 1rem;
+            background-image: url(Images/LOGANNNN\ EWJEBHJKWBU.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: center;
+        }
+
         }
         @media only screen and (min-width: 1200px)
         {
             #media
             {height: 600px;}
+
 
         }
         
@@ -275,6 +354,8 @@
         <p id="quote">
             - Logan Sargeant
         </p>
+        
+        
     </section>
     <!-- end media -->
 
@@ -285,10 +366,17 @@
 <div id="intro">
             <div class="container">
                 <h1>Introduction</h1>
-                <p>Welcome to my Portfolio! My name is Elizabeth Garcia and this is my thrid year taking a webpage class. I really enojy it but I also enjoy other things like motosports, art, and watching total drama. My webpage this year is based on one of my favorite driver Logan Sargeant, I decided to make this a day before he got replace and I'm coping, somehow. This is mainly now going to be in memory of him when he was in Williams, two years of F1 and one year of F2 with the team. I really enojy watching F1 with Lisandra and talking about it to her, It's one of the main things I do on my free time and I am glad that I got her into the sport.
+                <h3>Git Clone</h3>
+                <p>Welcome to my Portfolio! My name is Elizabeth Garcia and this is my thrid year taking a webpage class. I really enojy it but I also enjoy other things like motosports, art, and watching total drama. My webpage this year is based on one of my favorite driver Logan Sargeant, I decided to make this a day before he got replace and I'm coping, somehow. This is mainly now going to be in memory of him when he was in Williams, two years of F1 and one year of F2 with the team. I really enojy watching F1 with <a href="https://chsserver01.org/2024/lvilchis032024/">Lisandra</a> and talking about it to her, It's one of the main things I do on my free time and I am glad that I got her into the sport.
+                    
             </p>
             </div>
+
 </div>
+<p id="free">
+    <a href="dd">Click for FREE V-Bucks...NOW! </a>
+</p>
+    <p id="click">(only available for a limited time!)</p>
         
     </main>
     <!-- end pagecontent -->
@@ -317,7 +405,7 @@
     <a name="semester1"></a>
     <h2>Semester1</h2>
     <ul>
-        <li>A001</li>
+        <li><a href="Activities/CanvasSmileyFace/canvassmileyface.html">Smiley Face</a></li>
         <li>A002</li>
         <li>A003</li>
         <li>A004</li>
@@ -345,14 +433,14 @@
     <!-- begin pagefooter -->
     <footer id="pagefooter">
         <div class="container">
-            <a href="" target="new">chago</a> | 
-            <a href="" target="new">color schemes</a> | 
-            <a href="" target="new">aeries</a> | 
-            <a href="" target="new">chs</a> | 
-            <a href="" target="new">mycareertech</a> | 
-            <a href="" target="new">google classroom </a> | 
-            <a href="" target="new">codepip</a> | 
-            <a href="" target="new">minga</a>
+            <a href="https://www.formula1.com/" target="new">F1</a> | 
+            <a href="https://chsserver01.org/chaggy.net/colortheory/colorscheme2/index-en.html" target="new">color schemes</a> | 
+            <a href="https://coalingahuron.aeries.net/student/LoginParent.aspx" target="new">aeries</a> | 
+            <a href="https://chs.chusd.org/" target="new">chs</a> | 
+            <a href="https://mycareertech.com/" target="new">mycareertech</a> | 
+            <a href="https://classroom.google.com/u/0/h" target="new">google classroom </a> | 
+            <a href="https://codepip.com/" target="new">codepip</a> | 
+            <a href="https://app.minga.io/landing/country" target="new">minga</a>
         </div>
     </footer>
     <!-- end pagefooter -->
