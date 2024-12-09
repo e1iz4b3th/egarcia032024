@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        margin-top: 50px;
+    }
+    h1 {
+        text-align: center;
+    }
+    #canvas {
+        margin: auto;
+        display: block;
+        border: 1px solid silver;
+    }
+    </style>
+</head>
+<body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas" width="1000px" height="500px"></canvas>
+
+    <script>
+      // Create variables
+    const canvas = window.document.querySelector('#canvas');
+    const ctx = canvas.getContext('2d');
+
+
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 7; 
+
+    //log
+    ctx.beginPath
+    
+
+
+    // tree
+    ctx.fillStyle = "green"
+    ctx.beginPath();
+    ctx.moveTo(500, 50);
+    ctx.lineTo(650, 400);
+    ctx.lineTo(350, 400);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = '#b00b69'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(450, 200, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = '#69b00b'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(500, 250, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'cyan'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(560, 210, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'blue'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(566, 310, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'red'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(400, 300, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'white'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(450, 355, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'pink'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(540, 385, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'magenta'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(640, 385, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    
+    //dots
+    ctx.strokeStyle = 'black';
+    ctx.fillStyle = 'orange'
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(359, 385, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    
+    </script>
+</body>
+</html>
