@@ -82,7 +82,19 @@
         const btnCreateRectangle = window.document.querySelector('#createrectangle');
         btnCreateRectangle.style.backgroundColor = 'lightpink';
         btnCreateRectangle.addEventListener('click', function(){
-            window.alert('Create Rectangle')});     
+            //window.alert('Create Rectangle')
+            ctx.strokeStyle = "red";
+            ctx.fillStyle = 'red';
+            ctx.lineWidth = 10 ;
+            ctx.lineCap = 'square';
+            ctx.lineJoin = 'square';
+
+            ctx.beginPath();
+            ctx.fillRect(0, 0, 34, 34);
+            ctx.stroke();
+        
+        
+        });     
         
         const btnCreateTriangle = window.document.querySelector('#createtriangle');
         btnCreateTriangle.style.backgroundColor = 'lightpink';

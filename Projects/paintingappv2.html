@@ -46,9 +46,11 @@
     <section id="menu">
         <input type="color" id="colorpicker" value="#000000">
         <input type="range" id="rangepicker" min="5" max="100" value="15">
-        <div id="erase"><img src="Images/eraser.png" alt="eraser - erase your drawing"></div>
-        <div id="clear"><img src="Images/bin.png" alt="trash can - clear your canvas"></div>
+        <div id="erase"><img src="Images/eraser.svg" alt="eraser - erase your drawing"></div>
+        <div id="clear"><img src="Images/bin.svg" alt="trash can - clear your canvas"></div>
         <div id="undo"><img src="Images/undo.svg" alt="undo - undo last stroke"></div>
+        <div id="download"><img src="Images/download.svg" alt="download - download canvas image"></div>
+
     </section>
 
     <script>
@@ -72,11 +74,17 @@
         const ERASE = window.document.querySelector('#erase');
         const CLEAR = window.document.querySelector('#clear');
         const UNDO = window.document.querySelector('#undo');
+        const DOWNLOAD = window.document.querySelector('#download');
 
         // Set canvas style
         CANVAS.width = window.innerWidth;
         CANVAS.height = window.innerHeight;
         CANVAS.style.backgroundColor = canvasColor;
+
+        //Color the canvas
+        CTX.fillStyle = canvasColor;
+        CTX.fillRect(0,0, CANVAS.width,CANVAS.height);
+
 
         // Add event listeners to menu items
         COLORPICKER.addEventListener('input', function(e)
@@ -112,6 +120,24 @@
         UNDO.addEventListener('click',function()
         {
             alert('undo');
+        }
+        );
+        DOWNLOAD.addEventListener('click',function(e)
+        {
+            //alert('download');
+            let imageData = CANVAS.toDataURL();
+            
+            //alert(imageData);
+
+            // Color Canvas
+
+            let link = document.createElement('a');
+            link.href = imageData;
+            link.download = "paintingappimage";
+            link.click();
+            link.remove();
+
+
         }
         );
 
