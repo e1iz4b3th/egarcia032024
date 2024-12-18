@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Objects</title>
+    <style>
+        body{
+            background-color: rgb(103, 204, 222);
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom Objects</h1>
+
+    <script>
+        const LOGAN = 
+        {
+            name: 'Logan',
+            age: '23',
+            eyecolor: 'green',
+            haircolor: 'blonde',
+            birthday: 'December 31st',
+            height: '5 feet 11 inches',
+            Image: '<img src="images/logan.png">',
+            isInF1: false,
+            drive: function(){return 'vroom!'},
+            crash: function(){return 'SKIRRRTTTTT BOOM!'},
+            Talk: function(){return 'Im done, Im ready to come home.'},
+        }
+
+        //commands
+        window.document.write(LOGAN.name + '<br>');
+        window.document.write(LOGAN.age + '<br>');
+        window.document.write(LOGAN.eyecolor + '<br>');
+        window.document.write(LOGAN.haircolor + '<br>');
+        window.document.write(LOGAN.birthday + '<br>');
+        window.document.write(LOGAN.height + '<br>');
+        window.document.write(LOGAN.Image + '<br>');
+        window.document.write(LOGAN.isInF1 + '<br>');
+        window.document.write(LOGAN.drive() + '<br>');
+        window.document.write(LOGAN.crash() + '<br>');
+        window.document.write(LOGAN.Talk() + '<br>');
+
+
+        
+    </script>
+</body>
+</html>
