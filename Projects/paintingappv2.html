@@ -59,6 +59,7 @@
         let brushColor = "#000000"; // Default brush color
         let painting = false; 
         let brushSize = 15;
+        let canvasData;
 
         // Canvas drawing variables
         let lineJoinStyle = "round";
@@ -193,13 +194,20 @@
     {
         painting = false;
 
-        let canvasData = CTX.getImageData(0, 0, CANVAS.width, CANVAS.height);
+        canvasData = CTX.getImageData(0, 0, CANVAS.width, CANVAS.height);
         //alert(canvasData);
+        console.log(canvasData);
+        
     })
 
     window.addEventListener('resize', function()
     {
         //alert('resized!')
+        CANVAS.width = window.innerWidth;
+        CANVAS.height = window.innerHeight;
+        // Place canvas data on canvas
+        CTX.putImageData(canvasData, 0, 0);
+
 
     })
     </script>
