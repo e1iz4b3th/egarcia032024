@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrays - Personalized</title>
     <style>
-        
+        body {
+            background-color: rgb(202, 16, 16);
+        }
     </style>
 </head>
 <body>
@@ -16,7 +18,7 @@
     let myf1drivers;
     myf1drivers = []
 
-    myf1drivers[0] = "Max Verstappen" 
+    myf1drivers[0] = "Logan Sargeant"
     myf1drivers[1] = "Charles Leclerc"
     myf1drivers[2] = "Sergio Perez"
     myf1drivers[3] = "Esteban Ocon"
@@ -24,7 +26,7 @@
     myf1drivers[5] = "Yuki Tsunoda"
     myf1drivers[6] = "Alexander Albon"
     myf1drivers[7] = "Oscar Piastri"
-    myf1drivers[8] = "Logan Sargeant"
+    myf1drivers[8] = "Max Verstappen"
     myf1drivers[9] = "Daniel Ricciardo"
 
     
@@ -41,24 +43,26 @@
 
     
     myf1drivers.unshift('Lewis Hamilton');
-
+    myf1drivers.unshift('Franco Colapinto');;
 
     console.log(myf1drivers.length);
 
-    myf1drivers.forEach(  function(drivers)
+        myf1drivers.forEach(  function(drivers)
         {
-            document.write("Race winner, " + drivers + "<br>");
+            document.write("Race winner, " + drivers + "<br>" + "<img width='140px' src='images/win.jpg'>" + "<br>"
+            );
+
         }
         );
 
         myf1drivers.forEach(  function(drivers)
         {
-            document.write("Sigma " + drivers + "<br>");
+            document.write("Sigma " + drivers + "<br>" + "<img width='140px' src='images/sigma.jpg'>" + "<br>");
         }
         );
 
         myf1drivers.forEach(  function(d){
-            document.write(d + ", He is crash "+ "<br>")
+            document.write(d + ", He is crash "+ "<br>" + "<img width='140px' src='images/crash.jpg'>" + "<br>");
         }  );
 
 
