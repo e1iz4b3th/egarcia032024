@@ -4,36 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrays - Personalized</title>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <h1>Arrays for Each</h1>
+    <h1>Favorite F1 Drivers</h1>
 
 <script>
 
     let myf1drivers;
     myf1drivers = []
 
-    myf1drivers[0] = "Lewis Hamilton"
-    myf1drivers[1] = "Max Verstappen"
-    myf1drivers[2] = "Charles Leclerc"
-    myf1drivers[3] = "Sergio Perez"
-    myf1drivers[4] = "Carlos Sainz"
-    myf1drivers[5] = "George Russell"
-    myf1drivers[6] = "Lando Norris"
-    myf1drivers[7] = "Esteban Ocon"
-    myf1drivers[8] = "Fernando Alonso"
-    myf1drivers[9] = "Valtteri Bottas"
-    myf1drivers[10] = "Lance Stroll"
-    myf1drivers[11] = "Pierre Gasly"
-    myf1drivers[12] = "Yuki Tsunoda"
-    myf1drivers[13] = "Alexander Albon"
-    myf1drivers[14] = "Nico Hulkenberg"
-    myf1drivers[15] = "Kevin Magnussen"
-    myf1drivers[16] = "Zhou Guanyu"
-    myf1drivers[17] = "Guanyu Zhou"
-    myf1drivers[18] = "Nyck De Vries"
-    myf1drivers[19] = "Oscar Piastri"
-    myf1drivers[20] = "Logan Sargeant"`
+    myf1drivers[0] = "Max Verstappen" 
+    myf1drivers[1] = "Charles Leclerc"
+    myf1drivers[2] = "Sergio Perez"
+    myf1drivers[3] = "Esteban Ocon"
+    myf1drivers[4] = "Fernando Alonso"
+    myf1drivers[5] = "Yuki Tsunoda"
+    myf1drivers[6] = "Alexander Albon"
+    myf1drivers[7] = "Oscar Piastri"
+    myf1drivers[8] = "Logan Sargeant"
+    myf1drivers[9] = "Daniel Ricciardo"
+
+    
+
+    myf1drivers.push("Carlos Sainz");
+    myf1drivers.push("Sebastian Vettel");
+
+
+    console.log(myf1drivers);
+
+
+    myf1drivers.pop(); 
+    myf1drivers.shift(); 
+
+    
+    myf1drivers.unshift('Lewis Hamilton');
+
+
+    console.log(myf1drivers.length);
+
+    myf1drivers.forEach(  function(drivers)
+        {
+            document.write("Race winner, " + drivers + "<br>");
+        }
+        );
+
+        myf1drivers.forEach(  function(drivers)
+        {
+            document.write("Sigma " + drivers + "<br>");
+        }
+        );
+
+        myf1drivers.forEach(  function(d){
+            document.write(d + ", He is crash "+ "<br>")
+        }  );
+
+
+
 </script>
 
 
