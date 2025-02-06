@@ -1,0 +1,4 @@
+## The background of Jack Dempsey
+During world war 2 Jack Dempsey served as a lieutenant commander in the coast guard. His career began in 1914 and his kid name was “blackie”. He was taught how to box by his brother. In Salt lake city on July 4th 1919 he won a fight against Jess Willard, the great white hope and became a world heavyweight champion. He didn't defend his title till september 1920 with a fight with billy Biske in benton harbor michigan. He then got a second title in December 1920 against bill brennan at madison square garden in new york city. He defended his title against jim flynn in 1921 and 1922. He then lost his title to joe louis in 1923. He then retired in 1926. He then became a boxing promoter and trainer. He died in 1983.
+
+![The background of Jack Dempsey](Images/jack.png "The background of Jack Dempsey")

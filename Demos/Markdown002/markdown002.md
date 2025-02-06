@@ -8,7 +8,7 @@
 
 ![Ajax the Dog](https://www.chsserver01.org/img/littledownajax.png "Ajax")
 
-![Markdown Logo](Images/makrdownlogo.png "Markdown Logo")
+![Markdown Logo](Images/makrdownlogo.png "Markdown Logo") 
 
 <!-- Tables -->
 | StudentID | FirstName | LastName | Grade |
