@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas - On Your Own 1 </title>
+</head>
+<style>
+    body{
+        background-color: yellow;
+    }
+    #container{
+    max-width:1200px;
+    width: 80%;
+    background-color: purple;
+    margin:auto;
+    border:1px solid black;
+    padding-top: 4rem;
+    padding-bottom: 4rem; 
+    }
+    #wrapper
+    {
+        background-color: green;
+        gap: 10px;
+        width: 80%;
+        margin: auto;
+    }
+    header{
+        background-color: orange;
+        min-height:5rem;
+        padding:2rem;
+        grid-area:header;
+    }
+    #media
+    {
+        background-color: lime;
+        min-height:15rem;
+        padding:1rem;
+        grid-area:media;
+    }
+    nav
+    {
+    background-color: aqua;
+    min-height:5rem;
+    padding:1rem;
+    grid-area:nav;
+    }
+    #main
+    {
+        background-color: white;
+        min-height:25rem;
+        padding:1rem;
+        grid-area:main;
+    }
+    #aside
+    {
+        background-color: teal;
+        min-height:25rem;
+        padding:1rem;
+        grid-area:aside;
+    }
+    #section1
+    {
+        background-color: coral;
+        min-height:13rem;
+        padding:1rem;
+        grid-area:section1;
+    }
+    #section2
+    {
+        background-color: lightblue;
+        min-height:13rem;
+        padding:1rem;
+        grid-area:section2;
+    }
+    #section3
+    {
+        background-color: lightgreen;
+        min-height:13rem;
+        padding:1rem;
+        grid-area:section3;
+    }
+    #footer
+    {
+        background-color:gold ;
+        min-height: 5rem;
+        padding:1rem;
+        grid-area:footer;
+    }
+    #subfooter
+    {
+        background-color: silver;
+        min-height: 18rem;
+        padding:1rem;
+        grid-area:subfooter;
+    }
+    @media screen and (min-width:768px)
+    {
+        #wrapper{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            "media media media"
+            "main main aside"
+            "section1 section2 section3"
+            "footer footer footer"
+            "subfooter subfooter subfooter"
+
+            ;
+        }
+    }
+</style>
+<body>
+    <div id="container">
+<div id="wrapper">
+    <header id="header">#pageheader</header>
+    <nav id="nav">#mainnav</nav>
+    <div id="media">#intromedia</div>
+    <main id="main">#pagemain</main>
+    <aside id="aside">#pageaside</aside>
+    <section id="section1">#card001</section>
+    <section id="section2">#card002</section>
+    <section id="section3">#card003</section>
+    <footer id="footer">#pagefooter</footer>
+    <footer id="subfooter">#pagedetails</footer>
+</div>
+    </div>
+</body>
+</html>
