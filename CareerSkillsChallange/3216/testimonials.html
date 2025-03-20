@@ -16,14 +16,14 @@
     max-width:1200px;
     width: 80%;
     background-color:#5c422d;
-    margin: auto;
+    margin: auto; 
     padding: 1rem;
     }
     header{
-        background-color: #a37147;
+        background-color: #8b969f;
         min-height:6rem;
         padding:3rem;
-        background-image: url(images/cats/kitten-collar.jpg);
+        background-image: url(images/cats/kissKitten.jpg);
         background-size: cover;
         background-position: center;
         position:relative ;
@@ -42,10 +42,14 @@
     }
     h3
     {
-        color: rgb(71, 38, 38);
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.386);
         font-family: 'Patua One', cursive;
-        margin-left: 20px;
+        font-size: 30px;
+        margin: auto;
+        text-align: center;
         padding: 1rem;
+        
     }
     p{
         color: rgb(255, 255, 255);
@@ -77,7 +81,7 @@
     }
     #topnav
     {
-    background-color:rgb(49, 65, 82);
+    background-color:rgb(16, 31, 48);
     padding: 2rem;
     grid-area: topnav;
     padding: 1rem;
@@ -94,14 +98,14 @@
     }
     #media
     {
-        background-image: url(images/logo/bluebrownwhite.jpg);
-        min-height:15rem;
-        padding:4rem;
+        background-image: url(images/logo/brownbluepale.jpg);
+        min-height:3rem;
+        padding:1rem;
         grid-area:media;
     }
-    #main
+    main
     {
-        background-color: #685020;
+        background-color: #713b2c;
         min-height:20rem;
         grid-area:main;
     }
@@ -117,7 +121,52 @@
         color: rgb(211, 116, 116);
         text-align: center;
     }
-    #section1
+    figure img
+    {
+            max-width: 30%;
+            height: auto;
+            float: auto;
+            margin: 1rem;
+    }
+    img.cat
+    {
+        max-width: 35%;
+        height: auto;
+        float: Right;
+        margin: 1rem;
+    }
+    img.snake
+    {
+        max-width: 45%;
+        height: auto;
+        float: Right;
+        margin: 1rem;
+    }
+    img.couple
+    {
+        max-width: 38%;
+        height: auto;
+        float: auto;
+        margin: 1rem;
+    }
+    .clearfix::after
+        {
+        content:"";
+        display: table;
+        clear: both;
+        }
+        figure
+        {
+            background-color: none;
+            margin: 2rem;
+        }
+        figcaption
+        {
+            text-align: Left;
+            font-size: 20px;
+            color: #ffffffcb;
+        }
+    /*#section1
     {
         background-color: none;
         min-height:15rem;
@@ -128,6 +177,7 @@
         background-position-x: center;
         background-position-y: bottom;
     }
+        */
     
 
     @media screen and (min-width:1200px)
@@ -138,15 +188,14 @@
         grid-template-areas: 
         "header header header header"
         "topnav topnav topnav topnav"
-        "media main main main"
-        "media main main main"
-        "section1 section2 section3 section4"
+        "media media media media"
+        "main main main main"
         "footer footer footer footer"
         ;
     }
     #header
     {
-        background-image: url(images/cats/kitten-collar.jpg);
+        background-image: url(images/cats/kissKitten.jpg);
         background-size: contain;
         background-position: right;
         background-repeat: no-repeat;
@@ -168,8 +217,9 @@
         top: -45px;
         left: 500px;
     }
+
         
-    #section2
+    /*#section2
     {
         background-color: none;
         min-height:10rem;
@@ -203,6 +253,7 @@
         background-position-x: center;
         background-position-y: bottom;
     }
+        */
     }
     </style>
 </head>
@@ -217,7 +268,7 @@
 
             <nav id="topnav">
                 <ul>
-                    <li><a href="index.html"  target="new">Home</a></li>
+                    <li><a href="index.html" target="new">Home</a></li>
                     <li><a href="whyadopt.html"  target="new">Adopt</a></li>
                     <li><a href="gallery.html"  target="new">Gallery</a></li>
                     <li><a href="testimonials.html"  target="new">Testimonials</a></li>
@@ -226,22 +277,44 @@
 
             <div id="media">
                 <h3>
-                    Information aboout Central Valley Pets!
+                Listen to what our Customers have to say!
                 </h3>
                 <p id="info">
-                    We are a pet adoption center that helps you find a new friend for your sad life!
-                    We have a wide variety of pets to choose from! From cats, dogs, birds, and even fish! We have it all! We rescue these pets and care for them till they find a home, with someone with a sad depressing life like you! We care for you as well as them so we encourage you to come and adopt a pet that will lighten up you dark depressing life!
+
                 </p>
 
             </div>
 
-            <main id="main">
-                <h2>
-                    Welcome to Central Valley Pets!
-                </h2>
-                <p>
-                    Feeling alone? You don't have anyone in your life because everyone left you because you're a highschool dropout? Don't have any company because your parents passed and your life is like if it was written by a 12 year old girl who keeps calling you y/n? Then don't worry! We got plenty of animals for you to adopt here at Central Valley pets! Pets who have gone though a lot just like you! A perfect company for a sad lonely person like you. Come Adopt a pet today and fill your empty life with a new friend!
-                </p>
+            <main class="clearfix">
+
+                
+            <figure> <img src="images/dogs/man-dogShoulder.jpg" alt="Mental man with Dog"> 
+                <figcaption>
+                    One of the dogs spoke to me in a language I didn't understand and nobody believed me. I'm now being sent to a mental institustion for mental evaluation, there's nothing more positive than a dog speaking an ancient language. <br>
+                    - <em>xoxo John Pork</em>
+                </figcaption>
+            </figure>
+
+            <figure> <img class="cat" src="images/cats/kitten.jpg" alt="Evil Cat"> 
+                <figcaption>
+                    Kittens are so cute! I am so happy that I got this cute kitten named, Skitritiza. She makes me forget how single I am. <br>
+                    - <em>Amber Tinkle</em>
+                </figcaption>
+            </figure>
+
+            <figure> <img class="couple" src="images/cats/couple-withDog.jpg" alt="Couple with dog"> 
+                <figcaption>
+                    We adopted our pet dog named Coco from here a few weeks ago and this was one of the best decisions we have ever made! We haven't thought about breaking up with each other ever since, this dog truly brings us joy and the love that we lacked in our relationship! Thank you, Central Valley pets for fixing our relationship with this cute loveable pet! <br>
+                    - <em>Jane Hope and Mark Les</em>
+                </figcaption>
+
+                <figure> <img class="snake" src="images/frogsturtleothers/kingsnake-g64c165994_1920.jpg" alt="Snake"> 
+                    <figcaption>
+                        Bought this snake to scare my neighbor, 100% worked and I haven't seen her since. <br>
+                        - <em>Oscar Leclerc</em>
+                    </figcaption>
+                </figure>
+            </figure>
             </main>
 
             <section id="section1">

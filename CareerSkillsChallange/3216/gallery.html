@@ -20,18 +20,16 @@
     padding: 1rem;
     }
     header{
-        background-color: #a37147;
+        background-color: #918a61;
         min-height:6rem;
         padding:3rem;
-        background-image: url(images/cats/kitten-collar.jpg);
-        background-size: cover;
-        background-position: center;
+
         position:relative ;
         grid-area:header;
     }
     h1
     {
-        display: none;
+    
     }
     h2
     {
@@ -73,11 +71,11 @@
         position: absolute;
         transition: all 2s;
         top: -45px;
-        left: -35px;
+        right: -35px;
     }
     #topnav
     {
-    background-color:rgb(49, 65, 82);
+    background-color:rgb(38, 51, 64);
     padding: 2rem;
     grid-area: topnav;
     padding: 1rem;
@@ -94,16 +92,22 @@
     }
     #media
     {
-        background-image: url(images/logo/bluebrownwhite.jpg);
+        background-image: url(images/dogs/adopt_puppy.jpg);
         min-height:15rem;
-        padding:4rem;
+        padding:1rem;
         grid-area:media;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
     }
     #main
     {
-        background-color: #685020;
-        min-height:20rem;
+        background-image: url(images/cats/sherpa.jpg);
+        min-height:15rem;
         grid-area:main;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
     }
     footer
     {
@@ -123,12 +127,44 @@
         min-height:15rem;
         padding:1rem;
         grid-area:section1;
-        background-image: url(images/dogs/dog-leash.jpg);
+        background-image: url(images/frogsturtleothers/bunny.jpg);
+        background-size: cover;
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+    #section3
+    {
+        background-color: none;
+        min-height:10rem;
+        padding:1rem;
+        grid-area:section3;
+        background-image: url(images/frogsturtleothers/kingsnake-g64c165994_1920.jpg);
         background-size: cover;
         background-position-x: center;
         background-position-y: bottom;
     }
-    
+    #section4
+    {
+        background-color: none;
+        min-height:15rem;
+        padding:1rem;
+        grid-area:section4;
+        background-image: url(images/dogs/dogFace.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    #section6
+    {
+        background-color: none;
+        min-height:15rem;
+        padding:1rem;
+        grid-area:section6;
+        background-image: url(images/birds/group-orangeParrots.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
 
     @media screen and (min-width:1200px)
     {
@@ -138,18 +174,14 @@
         grid-template-areas: 
         "header header header header"
         "topnav topnav topnav topnav"
-        "media main main main"
-        "media main main main"
-        "section1 section2 section3 section4"
+        "media main section1 section2"
+        "section3 section4 section5 section6"
         "footer footer footer footer"
         ;
     }
     #header
     {
-        background-image: url(images/cats/kitten-collar.jpg);
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
+        
     }
     h1
     {
@@ -166,7 +198,7 @@
         background-size: cover;
         position: absolute;
         top: -45px;
-        left: 500px;
+        right: 500px;
     }
         
     #section2
@@ -175,7 +207,7 @@
         min-height:10rem;
         padding:1rem;
         grid-area:section2;
-        background-image: url(images/birds/red-yellowParrots.jpg);
+        background-image: url(images/frogsturtleothers/spider-gb6ad79c70_1920.jpg);
         background-size: cover;
         background-position-x: center;
         background-position-y: bottom;
@@ -187,7 +219,7 @@
         min-height:10rem;
         padding:1rem;
         grid-area:section3;
-        background-image: url(images/fishes/seahorse.jpg);
+        background-image: url(images/frogsturtleothers/kingsnake-g64c165994_1920.jpg);
         background-size: cover;
         background-position-x: center;
         background-position-y: bottom;
@@ -195,10 +227,32 @@
     #section4
     {
         background-color: none;
-        min-height:10rem;
+        min-height:15rem;
         padding:1rem;
         grid-area:section4;
-        background-image: url(images/frogsturtleothers/frogOnTwig.jpg);
+        background-image: url(images/dogs/dogFace.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    #section5
+    {
+        background-color: none;
+        min-height:15rem;
+        padding:1rem;
+        grid-area:section5;
+        background-image: url(images/fishes/purple.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    #section6
+    {
+        background-color: none;
+        min-height:15rem;
+        padding:1rem;
+        grid-area:section6;
+        background-image: url(images/birds/group-orangeParrots.jpg);
         background-size: cover;
         background-position-x: center;
         background-position-y: bottom;
@@ -225,22 +279,19 @@
             </nav>
 
             <div id="media">
-                <h3>
-                    Information aboout Central Valley Pets!
-                </h3>
+                
                 <p id="info">
-                    We are a pet adoption center that helps you find a new friend for your sad life!
-                    We have a wide variety of pets to choose from! From cats, dogs, birds, and even fish! We have it all! We rescue these pets and care for them till they find a home, with someone with a sad depressing life like you! We care for you as well as them so we encourage you to come and adopt a pet that will lighten up you dark depressing life!
+
                 </p>
 
             </div>
 
             <main id="main">
                 <h2>
-                    Welcome to Central Valley Pets!
+
                 </h2>
                 <p>
-                    Feeling alone? You don't have anyone in your life because everyone left you because you're a highschool dropout? Don't have any company because your parents passed and your life is like if it was written by a 12 year old girl who keeps calling you y/n? Then don't worry! We got plenty of animals for you to adopt here at Central Valley pets! Pets who have gone though a lot just like you! A perfect company for a sad lonely person like you. Come Adopt a pet today and fill your empty life with a new friend!
+
                 </p>
             </main>
 
@@ -257,6 +308,14 @@
             </section>
 
             <section id="section4">
+
+            </section>
+
+            <section id="section5">
+
+            </section>
+
+            <section id="section6">
 
             </section>
 

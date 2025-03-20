@@ -1,0 +1,336 @@
+
+:root
+{
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body 
+{
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: ;
+}
+.container
+{
+    background-color: rgb(255, 255, 255);
+    min-height: 12rem;
+    max-width: 75rem;
+    margin: auto;
+    padding: 1rem 3rem 1rem 3rem;
+    position: relative;
+    border: 1px solid black;
+}
+#pageheader
+{
+    min-height: 200px;
+    background-color:#000014;
+    padding: 1rem;
+
+}
+#pageheader .container
+{
+    background-image: url(Images/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(23, 65, 97);
+}
+
+#logo
+{
+    width: 240px;
+    height: 240px;
+    background-color: none;
+    position: absolute;
+    top: -8px;
+    left: calc(50% - 100px);
+    border-radius: 50%;
+    transition: all 2s;
+    background-image: url(Images/Logo.png);
+    background-size: cover;
+}
+#pagenav
+{
+    color: white;
+    background-color:none;
+    min-height: 30px;
+    min-width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    /* Update from 150 to 200 */
+    left: calc(50% - 200px);
+}
+#pagenav a{
+    color:rgba(255, 255, 255, 0.83);
+    text-transform: uppercase;
+    font-family: fantasy;
+    background-color: #00000092;
+    font-weight: 900;
+}
+#pagenav a:hover
+{
+    color: rgb(9, 173, 255);
+}
+#topnav
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 149, 194);
+    padding: 1rem;
+    text-align: center;
+}
+#topnav .container
+{
+    min-height: 2rem;
+    background-color: #4e1313;
+}
+#topnav a
+{
+    color: rgb(0, 149, 194);
+    padding: 1rem;
+}
+#media
+{
+    min-height: 300px;
+    padding: 1rem;
+    background-image: url(Images/loganbed.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+#media h1
+{
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(166, 24, 24, 0.814);
+    text-shadow: rgb(0, 0, 0) -2px 2px;
+    font-family: ;
+}
+#media h2
+{
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 213, 255, 0.778);
+    text-shadow: rgb(0, 0, 0) -2px 2px;
+
+}
+
+#media blockquote
+{
+    color:rgba(255, 255, 255, 0.849);
+    text-shadow: rgb(0, 0, 0) -2px 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+#quote
+{
+    color: rgba(255, 255, 255, 0.871);
+    text-shadow: rgb(0, 0, 0) -2px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#free
+{
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    text-align: end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+}
+#free a
+{
+    color: rgba(0, 255, 255, 0.835);
+}
+#click
+{
+    color: #ffffff99;
+    text-align: end;
+    text-shadow: rgb(0, 0, 0) -2px 2px;
+    font-size: small;
+} 
+#intro
+{
+    color: rgb(0, 149, 194);
+}
+#intro a
+{
+    color:  rgb(14, 199, 255);
+    text-decoration: none;
+}
+#pagecontent
+{
+    min-height: 200px;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+
+}
+#pagecontent .container
+{
+    background-color: rgb(30, 40, 57);
+    background-position: center;
+    background-size: cover;
+}
+#keyassignments
+{
+    min-height: 200px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 1rem;
+}
+#keyassignments .container
+{
+    background-image: url(Images/reddark.jpg);
+    background-position-y: -10px;
+}
+#Career
+{
+    min-height: 200px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 1rem;
+}
+#Career .container
+{
+    background-image: url();
+    background-position-y: -10px;
+}
+#Semester1
+{
+    min-height: 200px;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+}
+#Semester1 .container
+{
+    background-image: url(Images/lovels2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#Semester2
+{
+    min-height: 200px;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    
+}
+#Semester2 .container
+{
+    color: rgb(155, 187, 215);
+    background-color: rgb(55, 90, 116);
+}
+#pagefooter
+{
+    background-color: black;
+    color: rgb(0, 149, 194);
+    padding: 1rem;
+    text-align: center;
+}
+#pagefooter .container
+{
+    min-height: 2rem;
+    background-color: #000000;
+}
+#pagefooter a
+{
+    color: rgb(0, 149, 194);
+}
+#subfooter
+{
+    min-height: 200px;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    
+}
+#subfooter .container
+{
+    background-image: url(Images/red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    color: #fc9b9bdf;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.footerlinks
+{
+    display: none;
+}
+#top
+{
+    background-image: url(Images/loganbacktotopwoword.png);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+}
+#top a
+{
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    opacity: 40%;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 320px)
+{
+
+}
+@media only screen and (min-width: 768px)
+{
+    #flexsubfooter
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerlinks
+    {
+        display: block;
+        min-width: 240px;
+        
+    }
+    #logo
+{
+    left: 5%;
+}
+    #pagenav
+    {
+        top: 0px;
+        right: 0px;
+        left: auto;
+        bottom: auto;
+    }
+
+
+}
+@media only screen and (min-width: 1024px)
+{
+    #media
+{
+    min-height: 300px;
+    padding: 1rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+}
+@media only screen and (min-width: 1200px)
+{
+    #media
+    {height: 600px;}
+
+
+}
+

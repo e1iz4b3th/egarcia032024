@@ -1,0 +1,38 @@
+body
+{
+    background-color: lavender;
+    color: #333333;
+}
+h1
+{
+    font-family: "Rufina", serif;
+}
+h2
+{
+    font-family: "Rufina", serif;
+}
+p
+{
+    line-height: 1.7;
+    font-family: "DM Sans", sans-serif;
+}
+nav#topnav
+{
+    background-color:yellow;
+    padding: 1rem;
+}
+nav#topnav ul
+{
+    background-color: rgb(220, 146, 220);
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+nav#topnav ul li a{
+    color: rgb(46, 39, 119);
+    text-transform: uppercase;
+    
+}
