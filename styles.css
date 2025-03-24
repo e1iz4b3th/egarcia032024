@@ -67,9 +67,7 @@ body
 #pagenav a{
     color:rgba(255, 255, 255, 0.83);
     text-transform: uppercase;
-    font-family: fantasy;
-    background-color: #00000092;
-    font-weight: 900;
+    font-family: "Winky Sans", sans-serif;
 }
 #pagenav a:hover
 {
@@ -81,6 +79,7 @@ body
     color: rgb(0, 149, 194);
     padding: 1rem;
     text-align: center;
+    font-family: "Winky Sans", sans-serif;
 }
 #topnav .container
 {
@@ -107,7 +106,7 @@ body
     font-size: 3rem;
     color: rgba(166, 24, 24, 0.814);
     text-shadow: rgb(0, 0, 0) -2px 2px;
-    font-family: ;
+    font-family: "Yeseva One", serif;
 }
 #media h2
 {
@@ -122,7 +121,7 @@ body
 {
     color:rgba(255, 255, 255, 0.849);
     text-shadow: rgb(0, 0, 0) -2px 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Libre Baskerville", serif;
     font-weight: bolder;
 }
 #quote
@@ -155,6 +154,8 @@ body
 #intro
 {
     color: rgb(0, 149, 194);
+    font-family: "Winky Sans", sans-serif;
+    
 }
 #intro a
 {
@@ -178,7 +179,7 @@ body
 {
     min-height: 200px;
     background-color: rgb(0, 0, 0);
-    color: #ffffff;
+    color: #973333;
     padding: 1rem;
 }
 #keyassignments .container
@@ -186,23 +187,34 @@ body
     background-image: url(Images/reddark.jpg);
     background-position-y: -10px;
 }
+#keyassignments a
+{
+    color: rgb(218, 90, 90);
+}
 #Career
 {
     min-height: 200px;
     background-color: rgb(0, 0, 0);
     color: #0a0909;
     padding: 1rem;
+    font-family: "Libre Baskerville", serif;
 }
 #Career .container
 {
+    background-color: rgb(55, 90, 116);
     background-image: url();
     background-position-y: -10px;
+}
+#Career a
+{
+    color: rgb(115, 159, 172);
 }
 #Semester1
 {
     min-height: 200px;
     background-color: rgb(0, 0, 0);
     padding: 1rem;
+    font-family: "Libre Baskerville", serif;
 }
 #Semester1 .container
 {
@@ -210,19 +222,26 @@ body
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
+}
+#Semester1 a
+{
+    color: rgb(91, 127, 138);
 }
 #Semester2
 {
     min-height: 200px;
     background-color: rgb(0, 0, 0);
     padding: 1rem;
-    
+    font-family: "Libre Baskerville", serif;
 }
 #Semester2 .container
 {
-    color: rgb(155, 187, 215);
+    color: rgb(0, 0, 0);
     background-color: rgb(55, 90, 116);
+}
+#Semester2 a
+{
+    color: rgb(14, 199, 255);
 }
 #pagefooter
 {
@@ -253,13 +272,17 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: top;
-    color: #fc9b9bdf;
+    color: #fab3b3df;
     
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: "Yeseva One", serif;
 }
 .footerlinks
 {
     display: none;
+}
+#subfooter a
+{
+    color: rgb(255, 161, 155);
 }
 #top
 {
