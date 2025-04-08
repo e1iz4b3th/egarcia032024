@@ -35,7 +35,7 @@ body
     background-image: url(Images/);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(23, 65, 97);
+    background-color: rgb(0, 19, 33);
 }
 
 #logo
@@ -53,7 +53,7 @@ body
 }
 #pagenav
 {
-    color: white;
+    color: rgb(155, 6, 6);
     background-color:none;
     min-height: 30px;
     min-width: 400px;
@@ -65,7 +65,7 @@ body
     left: calc(50% - 200px);
 }
 #pagenav a{
-    color:rgba(255, 255, 255, 0.83);
+    color: rgb(139, 0, 0);
     text-transform: uppercase;
     font-family: "Winky Sans", sans-serif;
 }
@@ -268,11 +268,11 @@ body
 }
 #subfooter .container
 {
-    background-image: url(Images/red.jpg);
+    background-color: #550909;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: top;
-    color: #fab3b3df;
+    color: #d27c7cdf;
     
     font-family: "Yeseva One", serif;
 }
@@ -282,7 +282,7 @@ body
 }
 #subfooter a
 {
-    color: rgb(255, 161, 155);
+    color: rgb(212, 113, 106);
 }
 #top
 {
