@@ -119,8 +119,8 @@ body
 
 #media blockquote
 {
-    color:rgba(255, 255, 255, 0.849);
-    text-shadow: rgb(0, 0, 0) -2px 2px;
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) -1px 2px;
     font-family: "Libre Baskerville", serif;
     font-weight: bolder;
 }
@@ -155,6 +155,7 @@ body
 {
     color: rgb(0, 149, 194);
     font-family: "Winky Sans", sans-serif;
+    line-height: 2rem;
     
 }
 #intro a
