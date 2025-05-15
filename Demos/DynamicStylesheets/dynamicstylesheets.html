@@ -26,8 +26,8 @@
 
     <script>
         // select the select control (dropdown)
-        let selStyleSheet;
-        selStyleSheet = document.querySelector('#selstylesheet');
+        let selStylesheet;
+        selStylesheet = document.querySelector('#selstylesheet');
         //alert(selstylesheet.value);
 
         // Select the link to external stylesheet
@@ -37,9 +37,25 @@
 
         function updateStylesheet()
         {
-            //alert(selstylesheet.value);
-            styleLink.href = selStyleSheet.value;
+            //alert(selStylesheet.value);
+    
+            styleLink.href = selStylesheet.value;
+
+            // save to local storage
+            localStorage.setItem('selectedStylesheet3216', selStylesheet.value);
         }
+            window.addEventListener('load', function(){
+                let savedStylesheet = localStorage.getItem('selectedStylesheet3216');
+           
+
+            if(savedStylesheet !== null)
+            {
+                // Link to the saved stylesheet
+                styleLink.href = savedStylesheet
+                // match the dropbox box (select) to saved stylesheet
+                selStylesheet.value = savedStylesheet
+            }
+         });
     </script>
 </body>
 </html>
