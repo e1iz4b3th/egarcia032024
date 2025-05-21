@@ -43,7 +43,7 @@ body
     height: 180px;
     background-color: none;
     position: absolute;
-    top: -px;
+    top: 15px;
     left: calc(50% - 100px);
     border-radius: 50%;
     transition: all 2s;
