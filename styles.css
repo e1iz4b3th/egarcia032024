@@ -185,7 +185,7 @@ body
 }
 #keyassignments .container
 {
-    background-image: url(Images/reddark.jpg);
+    background-color: #4e1313;
     background-position-y: -10px;
 }
 #keyassignments a

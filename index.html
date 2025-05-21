@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elizabeth Garcia - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sakamotodays.css" id="linkheme">
+    
+<link id="stylelink" rel="stylesheet" href="sakamotodays.css" >
 
     <style>
 
@@ -123,7 +125,7 @@
 <div id="intro">
             <div class="container">
                 <h1>Introduction</h1>
-                <p>Welcome to my Portfolio! My name is Elizabeth Garcia and this is my third year taking a webpage class. I'm 17 years old, my favorite color is pink, I also enjoy things like motorsports, art, writing, watching total drama and anime. I really enjoy watching F1 with <a href="https://lissandrav.netlify.app/ " target="new">Lissandra</a> and talking about it to her. My favorite team is Williams. I'm also currently getting into indycar and so far I've enjoyed it. My top 3 favorite animes so far are, Princess Jellyfish, Blue Period, and Sakamoto Days. I've also been drawing since I was younger and I post some of my art on my instagram. I've also currently gotten into writing, which is another thing I love to do. I also enjoy looking at planes in free time which sounds boring to some but it's fun, I love learning about all the different types of planes and taking pictures of them whenever I see one. My favorite book series is the The Chemical Garden Trilogy. i enjoy listening to Radiohead, La dispute, Pierce the Veil, Mitski, the beatles, black box recorder, and the smiths.
+                <p>Welcome to my Portfolio! My name is Elizabeth Garcia and this is my third year taking a webpage class. I'm 17 years old, my favorite color is pink, I also enjoy things like motorsports, art, writing, watching total drama and anime. I really enjoy watching F1 with <a href="https://lissandrav.netlify.app/ " target="new">Lissandra</a> and talking about it to her. My favorite team is Williams. I'm also currently getting into indycar and so far I've enjoyed it. My top 3 favorite animes so far are, Princess Jellyfish, Blue Period, and Sakamoto Days. I've also been drawing since I was younger and I post some of my art on my instagram. I've also currently gotten into writing, which is another thing I love to do. I also enjoy looking at planes in free time which sounds boring to some but it's fun, I love learning about all the different types of planes and taking pictures of them whenever I see one. My favorite book series is the The Chemical Garden Trilogy. i enjoy listening to Radiohead, La dispute, Pierce the Veil, Mitski, the beatles, black box recorder, and the smiths. 
                 
             </p>
             </div>
@@ -133,12 +135,12 @@
     <a href="https://youtu.be/qzB4JdWDiTU?si=JnzODfCQW3A2fP1L">Click for FREE V-Bucks...NOW! </a>
 </p>
     <p id="click">(only available for a limited time!)</p>
-    <select name="themeselector" id="themeselector" onchange="updateTheme()">
-        <option value="styles.css">Logan Sargeant</option>
+
+
+    <select name="selstylesheet" id="selstylesheet" onchange="updateStylesheet()">
         <option value="sakamotodays.css">Sakamoto Days</option>
-
+        <option value="styles.css">Logan Sargeant</option>
         
-
     </select>
         
     </main>
@@ -286,37 +288,31 @@
     <div id="top">
         <a href="#topanchor">Back to Top?</a>
     </div>
+
     <script>
-            // SELECT SECTION
-            let linkTheme; // link tag to the stylesheet
-            let selTheme; // selection form control to select theme
+        let selStylesheet;
+        selStylesheet = document.querySelector('#selstylesheet');
 
-            linkTheme = document.querySelector('#linktheme');
-            //alert(LinkTheme);
-            selTheme = document.querySelector('#themeselector');
-            //alert(selTheme);
 
-            function updateTheme()
-            {
-                //alert();
-                linkTheme.href = selTheme.value; // Update StyleSheet
-                //alert(selTheme.value)
-                localStorage.setItem('selectedTheme3216', selTheme.value);
-            }
+        let styleLink;
+        styleLink = document.querySelector('#stylelink');
 
+        function updateStylesheet()
+        {
+            styleLink.href = selStylesheet.value;
+
+            localStorage.setItem('selectedStylesheet', selStylesheet.value);
+        }
             window.addEventListener('load', function(){
-                //alert();
-                let savedTheme;
-                savedTheme = localStorage.getItem('selectedTheme3216');
+                let savedStylesheet = localStorage.getItem('selectedStylesheet');
 
-                //alert(savedTheme);
-
-            if(savedTheme !== null)
+            if(savedStylesheet !== null)
             {
-                linkTheme.href = savedTheme; // Load stylesheet
-                selTheme.value = savedTheme;
+                styleLink.href = savedStylesheet
+                selStylesheet.value = savedStylesheet
             }
-            });
-    </script>
+        });
+        </script>
+
 </body>
 </html>
